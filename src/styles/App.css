@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: none;
+}
+
+#navbar {
+  background-color: #3f5760;
+  height: 70px;
+}
+
+#navbar #left-side-nav {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#navbar #left-side-nav p {
+  font-size: 1em;
+  color: #fff;
+}
+
+#navbar #left-side-nav a {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+#navbar #left-side-nav .links {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+#navbar .mr-auto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0;
+}
+
+#dental-exams-cleaning #homepage-image {
+  background: url("../images/Image-6-Homepage-Hero-Image.jpg");
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#dental-exams-cleaning #homepage-image #homepage-image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  background-color: rgba(63, 87, 96, 0.3);
+}
+
+#dental-exams-cleaning #homepage-image h1 {
+  z-index: 5;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+/*# sourceMappingURL=App.css.map */

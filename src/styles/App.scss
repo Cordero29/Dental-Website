@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: none;
+}
+
+$primeFont: "Roboto", sans-serif;
+$primeColor: #3f5760;
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< NAVBAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#navbar {
+  background-color: $primeColor;
+  height: 70px;
+  // display: flex;
+  // align-items: center;
+
+  #left-side-nav {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    p {
+      font-size: 1em;
+      color: #fff;
+    }
+    a {
+      font-family: $primeFont;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.5em;
+    }
+
+    .links {
+      text-decoration: none;
+      color: #fff;
+      font-family: $primeFont;
+    }
+  }
+
+  .mr-auto {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+  }
+}
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< NAVBAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< DENTAL EXAMS AND CLEANING >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#dental-exams-cleaning {
+  #homepage-image {
+    background: url('../images/Image-6-Homepage-Hero-Image.jpg');
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+    #homepage-image-overlay {
+      position: absolute;
+      width: 100%;
+      height: 400px;
+      background-color: rgba(rgb(63, 87, 96), 0.3);
+    }
+    h1 {
+      z-index: 5;
+      font-family: $primeFont;
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+}
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< DENTAL EXAMS AND CLEANING >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
