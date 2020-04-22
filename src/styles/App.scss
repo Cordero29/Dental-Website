@@ -14,73 +14,763 @@
 }
 
 $primeFont: "Roboto", sans-serif;
-$primeColor: #3f5760;
+$darkColor: #3f5760;
+$thatGreen: #65c3a0;
+$darkGreen: #245251;
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< NAVBAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-#navbar {
-  background-color: $primeColor;
-  height: 70px;
-  // display: flex;
-  // align-items: center;
+#main-navbar {
+  position: sticky;
+  top: 0;
+  background-color: $darkColor;
+  height: 65px;
+  width: 100%;
+  z-index: 20;
 
   #left-side-nav {
-    width: 65%;
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
     display: flex;
     flex-direction: column;
-    p {
+    align-items: center;
+    justify-content: center;
+
+    h1 {
       font-size: 1em;
       color: #fff;
+      font-family: $primeFont;
+      font-weight: 500;
+      margin: 0;
     }
+
     a {
       font-family: $primeFont;
       color: #fff;
       text-decoration: none;
       font-size: 1.5em;
+      transition: 180ms ease-out;
+      &:hover {
+        color: $thatGreen;
+      }
+    }
+  }
+
+  .dropdown-item {
+    text-decoration: none;
+    font-family: $primeFont;
+    font-size: 0.9em;
+    transition: 180ms ease-out;
+    &:hover {
+      background-color: $thatGreen;
+      color: #000;
     }
 
-    .links {
+    a {
       text-decoration: none;
-      color: #fff;
-      font-family: $primeFont;
+      color: $darkColor;
+    }
+  }
+
+  .dropdown-menu {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .dropdown-toggle {
+    color: #fff;
+    font-weight: 700;
+    transition: 180ms ease-out;
+    &:hover {
+      color: $thatGreen;
+    }
+  }
+
+  .outside-links {
+    font-family: $primeFont;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9em;
+    margin: 0 2em;
+    transition: 180ms ease-out;
+
+    &:hover {
+      color: $thatGreen;
     }
   }
 
   .mr-auto {
     display: flex;
     justify-content: flex-end;
-    margin: 0;
+    align-items: center;
+    margin: 15px;
+    width: 100%;
+
+    .dropdown-toggle,
+    nav-link {
+      font-size: 0.9em;
+      margin: 0 2em;
+    }
   }
 }
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< NAVBAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< CAROUSEL >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// Carousel overlay with header
+.homepage-image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 655px;
+  background-color: rgba(63, 87, 96, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+  h1 {
+    z-index: 5;
+    font-family: $primeFont;
+    color: #fff;
+    font-weight: 700;
+    padding: 45px;
+    text-align: center;
+  }
+}
+
+.every-other-page-overlay {
+  position: absolute;
+  width: 100%;
+  height: 450px;
+  background-color: rgba(63, 87, 96, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+  h1 {
+    z-index: 5;
+    font-family: $primeFont;
+    color: #fff;
+    font-weight: 700;
+  }
+}
+// Carousel overlay with header
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< CAROUSEL >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< OUR PRACTICE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#our-practice-page {
+  width: 100%;
+  height: 100%;
+
+  #our-practice-content {
+    width: 100%;
+    height: 100%;
+    padding: 5em;
+
+    h3 {
+      color: #0c4d4e;
+      font-family: $primeFont;
+      font-weight: 600;
+      font-size: 35px;
+      position: relative;
+      margin-bottom: 2em;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 65px;
+        background: #0c4d4e;
+        left: -13px;
+        top: -8px;
+      }
+    }
+
+    .dr-fred {
+      width: 100%;
+      height: 100%;
+      padding: 15px;
+      margin-bottom: 8em;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+
+      .dr-fred-portrait {
+        background: url("../images/dr-fred-img.JPG");
+        width: 800px;
+        height: 480px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .dr-fred-bio {
+        width: 100%;
+        height: 100%;
+        padding: 30px 40px;
+        background-color: $darkGreen;
+        font-family: $primeFont;
+        color: #fff;
+
+        h2 {
+          font-size: 35px;
+          font-weight: 600;
+          margin-bottom: 0.5em;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 19px;
+        }
+      }
+    }
+
+    .paula {
+      width: 100%;
+      height: 100%;
+      padding: 15px;
+      margin-bottom: 8em;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: flex-start;
+
+      .paula-portrait {
+        background: url("../images/paula-img.png");
+        width: 288px;
+        height: 288px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .paula-bio {
+        width: 100%;
+        height: 100%;
+        padding: 30px 40px;
+        background-color: $darkGreen;
+        font-family: $primeFont;
+        color: #fff;
+        h2 {
+          font-size: 35px;
+          font-weight: 600;
+          margin-bottom: 0.8em;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 19px;
+        }
+      }
+    }
+
+    .felix {
+      width: 100%;
+      height: 100%;
+      padding: 15px;
+      margin-bottom: 8em;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+
+      .felix-portrait {
+        background: url("../images/felix-img.JPEG");
+        width: 288px;
+        height: 288px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .felix-bio {
+        width: 100%;
+        height: 100%;
+        padding: 30px 40px;
+        background-color: $darkGreen;
+        font-family: $primeFont;
+        color: #fff;
+        h2 {
+          font-size: 35px;
+          font-weight: 600;
+          margin-bottom: 0.8em;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 19px;
+        }
+      }
+    }
+
+    .lauren {
+      width: 100%;
+      height: 100%;
+      padding: 15px;
+      margin-bottom: 6em;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: flex-start;
+
+      .lauren-portrait {
+        background: url("../images/lauren-img.jpeg");
+        width: 288px;
+        height: 288px;
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .lauren-bio {
+        width: 100%;
+        height: 100%;
+        padding: 30px 40px;
+        background-color: $darkGreen;
+        font-family: $primeFont;
+        color: #fff;
+        h2 {
+          font-size: 35px;
+          font-weight: 600;
+          margin-bottom: 0.8em;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+
+  .our-practice-bar {
+    width: 100%;
+    height: 1px;
+    background-color: $darkColor;
+    margin: auto;
+  }
+
+  .second {
+    margin-bottom: 1em;
+  }
+
+  .dental-treatment-content {
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+    margin: auto;
+
+    h3 {
+      color: #0c4d4e;
+      font-family: $primeFont;
+      font-weight: 600;
+      font-size: 35px;
+      position: relative;
+      margin-bottom: 2em;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 65px;
+        background: #0c4d4e;
+        left: -13px;
+        top: -8px;
+      }
+    }
+
+    .dental-treatment-sections {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      margin-bottom: 2em;
+
+      .dt-diagnosis {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        font-family: $primeFont;
+        font-size: 20px;
+
+        .dt-diagnosis-img {
+          background: url("../images/Diagnosis-Tooth-Image.png");
+          width: 200px;
+          height: 200px;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin: 1em auto;
+        }
+
+        h4 {
+          font-weight: 700px;
+          margin-bottom: 1em;
+        }
+        p {
+          width: 80%;
+          line-height: 26px;
+          margin: auto;
+        }
+      }
+
+      .dt-restorative-procedures {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        font-family: $primeFont;
+        font-size: 20px;
+
+        .dt-restorative-procedures-img {
+          background: url("../images/Restorative-Procedures-Tooth-Image.png");
+          width: 200px;
+          height: 200px;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin: 1em auto;
+        }
+
+        h4 {
+          font-weight: 700px;
+          margin-bottom: 1em;
+        }
+        p {
+          width: 90%;
+          line-height: 26px;
+          margin: auto;
+        }
+      }
+
+      .dt-hygiene {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        font-family: $primeFont;
+        font-size: 20px;
+
+        .dt-hygiene-img {
+          background: url("../images/Hygiene-Teeth-Image.png");
+          width: 200px;
+          height: 200px;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin: auto;
+        }
+
+        h4 {
+          font-weight: 700px;
+          margin: 1em auto;
+        }
+        p {
+          width: 90%;
+          line-height: 26px;
+          margin: auto;
+        }
+      }
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      font-weight: 600;
+      color: #252424;
+      background-color: $thatGreen;
+      width: 200px;
+      height: 100%;
+      padding: 10px;
+      text-align: center;
+      margin: 5em auto 2em auto;
+    }
+  }
+}
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< OUR PRACTICE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< DENTAL EXAMS AND CLEANING >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 #dental-exams-cleaning {
-  #homepage-image {
-    background: url('../images/Image-6-Homepage-Hero-Image.jpg');
+  #dental-exams-cleaning-content {
     width: 100%;
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-      align-items: center;
-      justify-content: center;
-    #homepage-image-overlay {
-      position: absolute;
-      width: 100%;
-      height: 400px;
-      background-color: rgba(rgb(63, 87, 96), 0.3);
-    }
-    h1 {
-      z-index: 5;
+    height: 100%;
+    padding: 4em;
+
+    h2 {
+      color: #0c4d4e;
       font-family: $primeFont;
-      color: #fff;
-      font-weight: 700;
+      font-weight: 600;
+      font-size: 22px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 65px;
+        background: #0c4d4e;
+        left: -13px;
+        top: -8px;
+      }
+    }
+
+    h3 {
+      color: #000;
+      font-family: $primeFont;
+      font-weight: 600;
+      font-size: 1em;
+      transform: translateY(30px);
+    }
+
+    p {
+      transform: translateY(20px);
+      font-size: 1em;
+    }
+
+    #exams-checklist {
+      margin-bottom: 45px;
+    }
+    ul {
+      width: 100%;
+      height: 100%;
+      margin-left: 20px;
+    }
+
+    #dental-exams-cleaning-bar {
+      width: 100%;
+      height: 2px;
+      background-color: $darkColor;
+      margin: auto;
+      margin-bottom: 2em;
     }
   }
 }
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< DENTAL EXAMS AND CLEANING >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< CLEANING AND PREVENTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#cleaning-prevention-page {
+  width: 100%;
+  height: 100%;
+
+  #cleaning-prevention-content {
+    width: 100%;
+    height: 100%;
+    padding: 4em;
+    font-family: $primeFont;
+
+    h2 {
+      color: #0c4d4e;
+      font-family: $primeFont;
+      font-weight: 600;
+      font-size: 22px;
+      position: relative;
+      margin-bottom: 2em;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 65px;
+        background: #0c4d4e;
+        left: -13px;
+        top: -8px;
+      }
+    }
+    p {
+      margin-left: 1em;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      font-weight: 600;
+      color: #252424;
+      background-color: $thatGreen;
+      width: 180px;
+      height: 100%;
+      padding: 10px;
+      text-align: center;
+      margin: 5em auto 8em auto;
+      font-size: 16px;
+    }
+    #cleaning-prevention-bar {
+      width: 100%;
+      height: 2px;
+      background-color: $darkColor;
+      margin: auto;
+    }
+  }
+}
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< CLEANING AND PREVENTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HOME CARE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#home-care-page {
+  width: 100%;
+  height: 100%;
+
+  #home-care-content {
+    width: 100%;
+    height: 100%;
+    padding: 5em;
+    font-family: $primeFont;
+
+    h2 {
+      color: #0c4d4e;
+      font-family: $primeFont;
+      font-weight: 600;
+      font-size: 22px;
+      position: relative;
+      margin-bottom: 2em;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 65px;
+        background: #0c4d4e;
+        left: -13px;
+        top: -8px;
+      }
+    }
+    p {
+      margin-left: 1em;
+      line-height: 26px;
+      font-size: 1em;
+    }
+    p:nth-child(10) {
+      margin-bottom: 5em;
+    }
+    #home-care-bar {
+      width: 100%;
+      height: 2px;
+      background-color: $darkColor;
+      margin: auto;
+    }
+  }
+}
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HOME CARE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< NEW PATIENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#new-patient-page {
+  width: 100%;
+  height: 100%;
+
+  #new-patient-content {
+    width: 100%;
+    height: 100%;
+    padding: 5em;
+    font-family: $primeFont;
+
+    h2 {
+      color: #0c4d4e;
+      font-family: $primeFont;
+      font-weight: 600;
+      font-size: 22px;
+      position: relative;
+      margin-bottom: 2em;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 65px;
+        background: #0c4d4e;
+        left: -13px;
+        top: -8px;
+      }
+    }
+    p {
+      font-size: 1em;
+      margin-left: 1em;
+      margin-bottom: 3em;
+      a {
+        text-decoration: underline $thatGreen;
+        font-weight: 600;
+        color: #000;
+        position: relative;
+
+      }
+    }
+
+    #new-patient-cta {
+      display: block;
+      text-decoration: none;
+      font-weight: 600;
+      color: #252424;
+      background-color: $thatGreen;
+      width: 180px;
+      height: 100%;
+      padding: 10px;
+      text-align: center;
+      margin: 5em auto 8em auto;
+      font-size: 16px;
+    }
+
+  }
+
+  #new-patient-files {
+    width: 100%;
+    height: 100%;
+    margin-left: 1em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {
+      text-decoration: underline $thatGreen;
+      color: $thatGreen;
+      font-size: 1em;
+      font-weight: 600;
+      margin-bottom: 3em;
+    }
+  }
+
+
+  #new-patient-bar {
+    width: 100%;
+    height: 2px;
+    background-color: $darkColor;
+    margin: auto;
+  }
+
+
+}
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< NEW PATIENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#footer {
+  width: 100%;
+  height: 125px;
+  background-color: #3f5760;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h4 {
+    font-family: $primeFont;
+    margin: 0 3em;
+    font-size: 1.38em;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

@@ -10,56 +10,85 @@ import phone from "../images/phone-logo.png";
 export default function Header() {
   return (
     <>
-      <Navbar id="navbar" expand="xl">
+      <Navbar id="main-navbar" expand="xl">
         <Nav id="left-side-nav">
-          <p>Dr. Kastenbaum</p>
-          {/* <br/> */}
+          <h1>Dr. Kastenbaum</h1>
           <a href="tel:+1-212-319-8787">
-            <img src={phone} width="24px" height="auto" alt="phone-link" />
-            +1-212-319-8787
+            <img
+              src={phone}
+              width="26px"
+              height="auto"
+              style={{ marginRight: 5, marginBottom: 5 }}
+              alt="phone-link"
+            />
+            212-319-8787
           </a>
         </Nav>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Link className="links" to="/">Our Practice</Link>
+            <Link className="outside-links" to="/">
+              Our Practice
+            </Link>
             <NavDropdown title="Diagnosis" id="basic-nav-dropdown">
               <NavDropdown.Item>
-                <Link className="links" to="/dentalexamsandcleaning">Dental Exam + Cleaning</Link>
+                <Link className="links" to="/dentalexamsandcleaning">
+                  Dental Exam + Cleaning
+                </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link className="links" to="/xrays">X-Rays</Link>
+                <Link className="links" to="/xray">
+                  X-Rays
+                </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link className="links" to="/oralcancerexams">Oral Cancer Exam</Link>
+                <Link className="links" to="/oralcancerexam">
+                  Oral Cancer Exam
+                </Link>
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Hygiene">
               <NavDropdown.Item>
-                <Link className="links" to="/cleaningandprevention">Cleaning + Prevention</Link>
+                <Link className="links" to="/cleaningandprevention">
+                  Cleaning + Prevention
+                </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link className="links" to="/homecare">Home Care</Link>
+                <Link className="links" to="/homecare">
+                  Home Care
+                </Link>
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Procedures">
               <NavDropdown.Item>
-                <Link className="links" to="/restorations">Restorations</Link>
+                <Link className="links" to="/restorations">
+                  Restorations
+                </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link className="links" to="/dentalimplants">Dental Implants</Link>
+                <Link className="links" to="/dentalimplants">
+                  Dental Implants
+                </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link className="links" to="/cosmeticdentistry">Cosmetic Dentistry</Link>
+                <Link className="links" to="/cosmeticdentistry">
+                  Cosmetic Dentistry
+                </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link className="links" to="/teethwhitening">Teeth Whitening</Link>
+                <Link className="links" to="/teethwhitening">
+                  Teeth Whitening
+                </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link className="links" to="/seleants">Seleants</Link>
+                <Link className="links" to="/sealants">
+                  Sealants
+                </Link>
               </NavDropdown.Item>
             </NavDropdown>
-            <Link className="links" to="/newpatient">New Patient</Link>
+            <Link className="outside-links" to="/newpatient">
+              New Patient
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

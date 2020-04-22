@@ -9,9 +9,14 @@ import image5 from "../images/Image-5.jpeg";
 import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
 import image7 from "../images/Image-7.jpg";
 
-export default function DentalExamsCleaning() {
+import file1 from "../images/Notice-Of-Privacy-Practies.pdf";
+import file2 from "../images/Medical-History-Form.pdf";
+import file3 from "../images/Informed-Consent.pdf";
+import file4 from "../images/HIPPA-signature-pg.pdf";
+
+export default function NewPatient() {
   return (
-    <div id="dental-exams-cleaning">
+    <div id="new-patient-page">
       <div className="every-other-page-overlay">
         <h1>Fred Kastenbaum, D.M.D. - Prosthodontist</h1>
       </div>
@@ -73,52 +78,38 @@ export default function DentalExamsCleaning() {
           />
         </Carousel.Item>
       </Carousel>
-      <div id="dental-exams-cleaning-content">
-        <h2>Dental Exams & Cleaning</h2>
+      <div id="new-patient-content">
+        <h2>New Patient Forms</h2>
 
-        <h3>Exam</h3>
         <p>
-          A comprehensive dental exam will be performed by your dentist and
-          hyiegnest at your initial dental visit.
+          Prior to your first appointment, please download the forms below. Upon
+          completion, please email them to{" "}
+          <a href="mailto:info@kastenbaumpros.com" target="_blank" rel="noopener noreferrer">
+            info@kastenbaumpros.com
+          </a>
+          .
         </p>
-        <h3 id="exams-checklist">
-          At regular check-up exams, your dentist and hygienist will perform the
-          following:
-        </h3>
-        <ul>
-          <li>
-            <strong>Examination of diagnostic x-rays (radiographs):</strong>{" "}
-            Essential for detection of decay, tumors, cysts, and bone loss.
-            X-rays also help determine tooth and root positions.
-          </li>
-          <li>
-            <strong>Oral cancer screening:</strong> Check the face, neck, lips,
-            tongue, throat, tissues, and gums for any signs of oral cancer.
-          </li>
-          <li>
-            <strong>Gum disease evaluation:</strong> Check the gums and bone
-            around the teeth for any signs of periodontal disease.
-          </li>
-          <li>
-            <strong>Examination of tooth decay:</strong> All tooth surfaces will
-            be checked for decay with special dental instruments.
-          </li>
-          <li>
-            <strong>Examination of existing restorations:</strong> Check current
-            fillings, crowns, and bridges.
-          </li>
-          <li>
-            <strong>Personal home care instruction:</strong> Explaination of
-            tooth brushing and flosing.
-          </li>
-        </ul>
-        <h3 style={{ fontStyle: "italic", marginBottom: "15em" }}>
-          Call Today to Schedule an Appointment
-        </h3>
-        <div id="dental-exams-cleaning-bar"></div>
+        <div id="new-patient-files">
+          <a href={file1} target="_blank" rel="noopener noreferrer">
+            Notice Of Privacy Practices
+          </a>
+          <a href={file2} target="_blank" rel="noopener noreferrer">
+            Medical History Form
+          </a>
+          <a href={file3} target="_blank" rel="noopener noreferrer">
+            Informed Consent
+          </a>
+          <a href={file4} target="_blank" rel="noopener noreferrer">
+            HIPPA
+          </a>
+        </div>
+        <a id="new-patient-cta" href="/">
+          Contact Us
+        </a>
+        <div id="new-patient-bar"></div>
       </div>
       <iframe
-        title='Google Maps Location of Dental Office'
+        title="Google Maps Location of Dental Office"
         width="100%"
         height="372"
         frameBorder="0"
