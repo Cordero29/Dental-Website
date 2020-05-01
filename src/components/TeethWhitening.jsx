@@ -9,6 +9,9 @@ import image5 from "../images/Image-5.jpeg";
 import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
 import image7 from "../images/Image-7.jpg";
 
+const key =
+  "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4";
+
 export default function TeethWhitening() {
   return (
     <div id="teeth-whitening-page">
@@ -75,7 +78,7 @@ export default function TeethWhitening() {
       </Carousel>
       <div id="teeth-whitening-content">
         <h2>Teeth Whitening</h2>
-        <p style={{ marginBottom: '3em' }}>
+        <p style={{ marginBottom: "3em" }}>
           Teeth whitening is an excellent means for an individual to brighten
           their yellowing or dull gray appearing teeth in a short painless
           procedure in the office or with a take home kit. Not only is teeth
@@ -89,7 +92,7 @@ export default function TeethWhitening() {
           <li>Stained teeth due to medications (e.g. tetracycline)</li>
           <li>Yellow, brown stained teeth</li>
         </ul>
-        <div class="secondary-bar"></div>
+        <div className="secondary-bar"></div>
       </div>
       <iframe
         title="Google Maps Location of Dental Office"
@@ -97,7 +100,7 @@ export default function TeethWhitening() {
         height="372"
         frameBorder="0"
         style={{ border: 0 }}
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4"
+        src={key}
         allowFullScreen
       ></iframe>
     </div>

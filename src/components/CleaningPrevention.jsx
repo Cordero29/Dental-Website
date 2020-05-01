@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
 
 import image1 from "../images/Image-1.jpeg";
@@ -9,6 +8,8 @@ import image4 from "../images/Image-4.jpg";
 import image5 from "../images/Image-5.jpeg";
 import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
 import image7 from "../images/Image-7.jpg";
+
+const key = 'https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4'
 
 export default function CleaningPrevention() {
   return (
@@ -85,7 +86,7 @@ export default function CleaningPrevention() {
           our skilled, professional, and caring hygienist.
         </p>
 
-        <Link to="/">Scheduling Cleaning</Link>
+        <a href="tel:+1-212-319-8787">Scheduling Cleaning</a>
         <div id="cleaning-prevention-bar"></div>
       </div>
       <iframe
@@ -94,7 +95,7 @@ export default function CleaningPrevention() {
         height="372"
         frameBorder="0"
         style={{ border: 0 }}
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4"
+        src={key}
         allowFullScreen
       ></iframe>
     </div>

@@ -9,6 +9,9 @@ import image5 from "../images/Image-5.jpeg";
 import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
 import image7 from "../images/Image-7.jpg";
 
+const key =
+  "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4";
+
 export default function OralCancerExam() {
   return (
     <div id="oral-cancer-exam-page">
@@ -136,7 +139,7 @@ export default function OralCancerExam() {
           Leukoplakia can be cancerous or may become cancerous if treatment is
           not sought.
         </p>
-        <p style={{ marginBottom: '5em' }}>
+        <p style={{ marginBottom: "5em" }}>
           <strong>Lumps </strong>- Soreness, lumps or the general thickening of
           tissue anywhere in the throat or mouth can signal pathological
           problems.
@@ -158,7 +161,7 @@ export default function OralCancerExam() {
           The biopsy is a clinical procedure which will identify the precise
           stage and grade of the oral lesion.
         </p>
-        <p style={{ marginBottom: '4em' }}>
+        <p style={{ marginBottom: "4em" }}>
           Oral cancer is deemed to be present when the basement membrane of the
           epithelium has been broken. Malignant types of cancer can readily
           spread to other places in the oral and maxillofacial regions, posing
@@ -166,8 +169,11 @@ export default function OralCancerExam() {
           precise diagnosis but may include excision, radiation therapy and
           chemotherapy.
         </p>
-        <h3 style={{ marginBottom: '10em', fontStyle: 'italic' }}>If you have any questions or concerns about oral cancer, please consult with your dentist or dental hygienist.</h3>
-        <div class="secondary-bar"></div>
+        <h3 style={{ marginBottom: "10em", fontStyle: "italic" }}>
+          If you have any questions or concerns about oral cancer, please
+          consult with your dentist or dental hygienist.
+        </h3>
+        <div className="secondary-bar"></div>
       </div>
       <iframe
         title="Google Maps Location of Dental Office"
@@ -175,7 +181,7 @@ export default function OralCancerExam() {
         height="372"
         frameBorder="0"
         style={{ border: 0 }}
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4"
+        src={key}
         allowFullScreen
       ></iframe>
     </div>

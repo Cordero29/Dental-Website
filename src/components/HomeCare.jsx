@@ -9,6 +9,9 @@ import image5 from "../images/Image-5.jpeg";
 import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
 import image7 from "../images/Image-7.jpg";
 
+const key =
+  "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4";
+
 export default function HomeCare() {
   return (
     <div id="home-care-page">
@@ -119,10 +122,12 @@ export default function HomeCare() {
         <p>
           Take 12-16 inches (30-40cm) of dental floss and wrap it around your
           middle fingers, leaving about 2 inches (5cm) of floss between the
-          hands.<br /> Using your thumbs and forefingers to guide the floss, gently
-          insert the floss between teeth using a sawing motion.<br /> Curve the floss
-          into a “C” shape around each tooth and under the gumline. Gently move
-          the floss up and down, cleaning the side of each tooth.
+          hands.
+          <br /> Using your thumbs and forefingers to guide the floss, gently
+          insert the floss between teeth using a sawing motion.
+          <br /> Curve the floss into a “C” shape around each tooth and under
+          the gumline. Gently move the floss up and down, cleaning the side of
+          each tooth.
         </p>
 
         <p>
@@ -144,7 +149,7 @@ export default function HomeCare() {
           cleaners, irrigation devices, fluoride, medicated rinses, can all
           contribute to good dental home care.
         </p>
-      <div id='home-care-bar'></div>
+        <div id="home-care-bar"></div>
       </div>
       <iframe
         title="Google Maps Location of Dental Office"
@@ -152,7 +157,7 @@ export default function HomeCare() {
         height="372"
         frameBorder="0"
         style={{ border: 0 }}
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4"
+        src={key}
         allowFullScreen
       ></iframe>
     </div>

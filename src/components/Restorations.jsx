@@ -9,6 +9,9 @@ import image5 from "../images/Image-5.jpeg";
 import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
 import image7 from "../images/Image-7.jpg";
 
+const key =
+  "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4";
+
 export default function Restorations() {
   return (
     <div id="restorations-page">
@@ -75,7 +78,7 @@ export default function Restorations() {
       </Carousel>
       <div id="restorations-content">
         <h2>Restorations</h2>
-        <p style={{ marginBottom: '3em' }} >
+        <p style={{ marginBottom: "3em" }}>
           The incidence of tooth decay has significantly diminished over the
           years due to the usage of fluorides and an increase in patient
           awareness. However, teeth are still susceptible to decay, infection,
@@ -95,7 +98,7 @@ export default function Restorations() {
           <li>Replace old, unattractive dental restorations</li>
           <li>Restore normal eating and chewing</li>
         </ul>
-        <div class="secondary-bar"></div>
+        <div className="secondary-bar"></div>
       </div>
       <iframe
         title="Google Maps Location of Dental Office"
@@ -103,7 +106,7 @@ export default function Restorations() {
         height="372"
         frameBorder="0"
         style={{ border: 0 }}
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4"
+        src={key}
         allowFullScreen
       ></iframe>
     </div>

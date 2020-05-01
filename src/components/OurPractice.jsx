@@ -1,6 +1,5 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import { Link } from "react-router-dom";
 
 import image1 from "../images/Image-1.jpeg";
 import image2 from "../images/Image-2.jpeg";
@@ -9,6 +8,9 @@ import image4 from "../images/Image-4.jpg";
 import image5 from "../images/Image-5.jpeg";
 import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
 import image7 from "../images/Image-7.jpg";
+
+const key =
+  "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4";
 
 export default function OurPractice() {
   return (
@@ -171,9 +173,9 @@ export default function OurPractice() {
             </p>
           </div>
         </div>
-        <Link id="our-practice-cta" to="/">
+        <a id="our-practice-cta" href="tel:+1-212-319-8787">
           Schedule Appointment
-        </Link>
+        </a>
         <div className="second our-practice-bar"></div>
       </div>
       <iframe
@@ -182,7 +184,7 @@ export default function OurPractice() {
         height="372"
         frameBorder="0"
         style={{ border: 0 }}
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4"
+        src={key}
         allowFullScreen
       ></iframe>
     </div>

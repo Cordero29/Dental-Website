@@ -31,59 +31,39 @@ export default function Header() {
               Our Practice
             </Link>
             <NavDropdown title="Diagnosis" id="basic-nav-dropdown">
-              <NavDropdown.Item>
-                <Link className="links" to="/dentalexamsandcleaning">
+              <NavDropdown.Item href='/dentalexamsandcleaning'> 
                   Dental Exam + Cleaning
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link className="links" to="/xray">
+              <NavDropdown.Item href='/xray'>
                   X-Rays
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link className="links" to="/oralcancerexam">
+              <NavDropdown.Item href='/oralcancerexam'>
                   Oral Cancer Exam
-                </Link>
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Hygiene">
-              <NavDropdown.Item>
-                <Link className="links" to="/cleaningandprevention">
+              <NavDropdown.Item href='/cleaningandprevention' >
                   Cleaning + Prevention
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link className="links" to="/homecare">
+              <NavDropdown.Item href='/homecare'>
                   Home Care
-                </Link>
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Procedures">
-              <NavDropdown.Item>
-                <Link className="links" to="/restorations">
+              <NavDropdown.Item href='/restorations'>
                   Restorations
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link className="links" to="/dentalimplants">
+              <NavDropdown.Item href='/dentalimplants'>
                   Dental Implants
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link className="links" to="/cosmeticdentistry">
+              <NavDropdown.Item href='/cosmeticdentistry'>
                   Cosmetic Dentistry
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link className="links" to="/teethwhitening">
+              <NavDropdown.Item href='/teethwhitening'>
                   Teeth Whitening
-                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link className="links" to="/sealants">
+              <NavDropdown.Item href='/sealants'>
                   Sealants
-                </Link>
               </NavDropdown.Item>
             </NavDropdown>
             <Link className="outside-links" to="/newpatient">

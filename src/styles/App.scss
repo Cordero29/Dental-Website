@@ -83,17 +83,10 @@ $darkGreen: #245251;
 
     a {
       color: $darkColor;
-      text-decoration: none;
-      display: block;
-      width: 100%;
-      padding: 0.15rem 0.8rem;
-      clear: both;
-      font-weight: 400;
-      text-align: inherit;
-      white-space: nowrap;
-      background-color: transparent;
-      border: 0;
-      font-size: 0.95em;
+
+      &:hover {
+        color: #000;
+      }
     }
   }
 
@@ -547,11 +540,13 @@ $darkGreen: #245251;
       font-weight: 600;
       font-size: 1em;
       transform: translateY(30px);
+      margin-left: 1em;
     }
 
     p {
       transform: translateY(20px);
       font-size: 1em;
+      margin-left: 1em;
     }
 
     #exams-checklist {
@@ -560,7 +555,7 @@ $darkGreen: #245251;
     ul {
       width: 100%;
       height: 100%;
-      margin-left: 20px;
+      margin-left: 2em;
     }
   }
 }
@@ -609,21 +604,23 @@ $darkGreen: #245251;
     font-family: $primeFont;
     font-weight: 600;
     font-size: 1em;
+    margin-left: 1em;
   }
 
   p {
     font-size: 1em;
+    margin-left: 1em;
   }
 
   ul {
     width: 100%;
     height: 100%;
-    margin-left: 20px;
+    margin-left: 2.5em;
   }
 
   .after-list-italic {
     font-style: italic;
-    transform: translateY(0px);
+    margin-bottom: 3em;
   }
 
   .secondary-bar {
@@ -672,15 +669,18 @@ $darkGreen: #245251;
     font-weight: 600;
     font-size: 1em;
     margin-bottom: 1.5em;
+    margin-left: 1em;
   }
 
   p {
     font-size: 1em;
+    margin-left: 1em;
   }
+
   ul {
     width: 100%;
     height: 100%;
-    margin-left: 20px;
+    margin-left: 2.5em;
     margin-bottom: 3em;
   }
 }
@@ -834,7 +834,7 @@ $darkGreen: #245251;
       margin-left: 1em;
     }
     ul {
-      margin-left: 2em;
+      margin-left: 2.5em;
       margin-bottom: 6em;
     }
   }
@@ -883,7 +883,7 @@ $darkGreen: #245251;
       margin-left: 1em;
     }
     ul {
-      margin-left: 2em;
+      margin-left: 2.5em;
       margin-bottom: 6em;
     }
   }
@@ -932,12 +932,11 @@ $darkGreen: #245251;
       margin-left: 1em;
     }
     ul {
-      margin-left: 2em;
+      margin-left: 2.5em;
       margin-bottom: 2em;
     }
   }
 }
-
 // --------------------------------------------------- COSMETIC DENTISTRY -----------------------------------------------------
 
 // --------------------------------------------------- TEETH WHITENING -----------------------------------------------------
@@ -981,7 +980,7 @@ $darkGreen: #245251;
       margin-left: 1em;
     }
     ul {
-      margin-left: 2em;
+      margin-left: 2.5em;
       margin-bottom: 6em;
     }
   }
@@ -1124,7 +1123,7 @@ $darkGreen: #245251;
 
 #footer {
   width: 100%;
-  height: 125px;
+  height: 100px;
   background-color: #3f5760;
   display: flex;
   align-items: center;
@@ -1133,7 +1132,7 @@ $darkGreen: #245251;
   h4 {
     font-family: $primeFont;
     margin: 0 3em;
-    font-size: 1.38em;
+    font-size: 1em;
     font-weight: 300;
     color: #fff;
     text-align: center;

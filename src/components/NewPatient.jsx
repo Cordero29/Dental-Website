@@ -14,6 +14,9 @@ import file2 from "../images/Medical-History-Form.pdf";
 import file3 from "../images/Informed-Consent.pdf";
 import file4 from "../images/HIPPA-signature-pg.pdf";
 
+const key =
+  "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4";
+
 export default function NewPatient() {
   return (
     <div id="new-patient-page">
@@ -107,7 +110,7 @@ export default function NewPatient() {
             HIPPA
           </a>
         </div>
-        <a id="new-patient-cta" href="/">
+        <a id="new-patient-cta" href="tel:+1-212-319-8787">
           Contact Us
         </a>
         <div id="new-patient-bar"></div>
@@ -118,7 +121,7 @@ export default function NewPatient() {
         height="372"
         frameBorder="0"
         style={{ border: 0 }}
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4"
+        src={key}
         allowFullScreen
       ></iframe>
     </div>

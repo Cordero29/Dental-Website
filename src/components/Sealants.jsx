@@ -9,6 +9,9 @@ import image5 from "../images/Image-5.jpeg";
 import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
 import image7 from "../images/Image-7.jpg";
 
+const key =
+  "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4";
+
 export default function Sealants() {
   return (
     <div id="sealants-page">
@@ -97,7 +100,7 @@ export default function Sealants() {
           Adults – Tooth surfaces without decay that have deep grooves or
           depressions
         </p>
-        <p style={{ marginBottom: '2em' }} >
+        <p style={{ marginBottom: "2em" }}>
           Baby teeth – Occasionally done if teeth have deep grooves or
           depressions and a child is cavity prone
         </p>
@@ -114,11 +117,11 @@ export default function Sealants() {
           enamel surface to cover the deep grooves or depressions and activiated
           with a special curing light.
         </p>
-        <p style={{ marginBottom: '10em' }}>
+        <p style={{ marginBottom: "10em" }}>
           Proper home care, a balanced diet, and regular dental visits will aid
           in the life of your new sealants.
         </p>
-        <div class="secondary-bar"></div>
+        <div className="secondary-bar"></div>
       </div>
       <iframe
         title="Google Maps Location of Dental Office"
@@ -126,7 +129,7 @@ export default function Sealants() {
         height="372"
         frameBorder="0"
         style={{ border: 0 }}
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4"
+        src={key}
         allowFullScreen
       ></iframe>
     </div>

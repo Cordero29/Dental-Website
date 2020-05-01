@@ -9,6 +9,9 @@ import image5 from "../images/Image-5.jpeg";
 import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
 import image7 from "../images/Image-7.jpg";
 
+const key =
+  "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4";
+
 export default function DentalImplants() {
   return (
     <div id="dental-implants-page">
@@ -88,19 +91,26 @@ export default function DentalImplants() {
           attached to implants are very natural looking and often enhance or
           restore a patient’s smile!
         </p>
-        <p style={{ marginBottom: '3em' }}>
+        <p style={{ marginBottom: "3em" }}>
           Dental implants are very strong, stable, and durable and will last
           many years. On occasion, they may nweed to be re-tightened or replaced
           due to normal wear.
         </p>
         <h3>Reasons for dental implants:</h3>
         <ul>
-          <li>Replace one or more missing teeth without affecting adjacent teeth</li>
-          <li>Resolve joint pain or bite problems caused by teeth shifting into missing tooth space</li>
+          <li>
+            Replace one or more missing teeth without affecting adjacent teeth
+          </li>
+          <li>
+            Resolve joint pain or bite problems caused by teeth shifting into
+            missing tooth space
+          </li>
           <li>Restore a patient’s confident smile</li>
           <li>Restore chewing, speech, and digestion</li>
           <li>Restore or enhance facial tissues</li>
-          <li>Support a bridge or denture, making them more secure and comfortable</li>
+          <li>
+            Support a bridge or denture, making them more secure and comfortable
+          </li>
         </ul>
         <h3>What does getting dental implants involve?</h3>
         <p>
@@ -120,12 +130,12 @@ export default function DentalImplants() {
           healing period, the artificial teeth are securely attached to the
           implant, providing excellent stability and comfort for the patient.
         </p>
-        <p style={{ marginBottom: '6em' }}>
+        <p style={{ marginBottom: "6em" }}>
           You will receive care instructions when your treatment is completed.
           Good oral hygiene, eating habits, and regular dental visits will aid
           in the life of your new implant.
         </p>
-        <div class="secondary-bar"></div>
+        <div className="secondary-bar"></div>
       </div>
       <iframe
         title="Google Maps Location of Dental Office"
@@ -133,7 +143,7 @@ export default function DentalImplants() {
         height="372"
         frameBorder="0"
         style={{ border: 0 }}
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4"
+        src={key}
         allowFullScreen
       ></iframe>
     </div>

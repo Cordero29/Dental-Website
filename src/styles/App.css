@@ -92,17 +92,10 @@
 
 #main-navbar .dropdown-menu a {
   color: #3f5760;
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  padding: 0.15rem 0.8rem;
-  clear: both;
-  font-weight: 400;
-  text-align: inherit;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
-  font-size: 0.95em;
+}
+
+#main-navbar .dropdown-menu a:hover {
+  color: #000;
 }
 
 #main-navbar .dropdown-toggle {
@@ -614,12 +607,14 @@
   font-size: 1em;
   -webkit-transform: translateY(30px);
           transform: translateY(30px);
+  margin-left: 1em;
 }
 
 #dental-exams-cleaning #dental-exams-cleaning-content p {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   font-size: 1em;
+  margin-left: 1em;
 }
 
 #dental-exams-cleaning #dental-exams-cleaning-content #exams-checklist {
@@ -629,7 +624,7 @@
 #dental-exams-cleaning #dental-exams-cleaning-content ul {
   width: 100%;
   height: 100%;
-  margin-left: 20px;
+  margin-left: 2em;
 }
 
 .secondary-bar {
@@ -671,22 +666,23 @@
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 1em;
+  margin-left: 1em;
 }
 
 #xray-page p {
   font-size: 1em;
+  margin-left: 1em;
 }
 
 #xray-page ul {
   width: 100%;
   height: 100%;
-  margin-left: 20px;
+  margin-left: 2.5em;
 }
 
 #xray-page .after-list-italic {
   font-style: italic;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  margin-bottom: 3em;
 }
 
 #xray-page .secondary-bar {
@@ -729,16 +725,18 @@
   font-weight: 600;
   font-size: 1em;
   margin-bottom: 1.5em;
+  margin-left: 1em;
 }
 
 #oral-cancer-exam-page p {
   font-size: 1em;
+  margin-left: 1em;
 }
 
 #oral-cancer-exam-page ul {
   width: 100%;
   height: 100%;
-  margin-left: 20px;
+  margin-left: 2.5em;
   margin-bottom: 3em;
 }
 
@@ -886,7 +884,7 @@
 }
 
 #restorations-page #restorations-content ul {
-  margin-left: 2em;
+  margin-left: 2.5em;
   margin-bottom: 6em;
 }
 
@@ -930,7 +928,7 @@
 }
 
 #dental-implants-page #dental-implants-content ul {
-  margin-left: 2em;
+  margin-left: 2.5em;
   margin-bottom: 6em;
 }
 
@@ -974,7 +972,7 @@
 }
 
 #cosmetic-dentistry-page #cosmetic-dentistry-content ul {
-  margin-left: 2em;
+  margin-left: 2.5em;
   margin-bottom: 2em;
 }
 
@@ -1018,7 +1016,7 @@
 }
 
 #teeth-whitening-page #teeth-whitening-content ul {
-  margin-left: 2em;
+  margin-left: 2.5em;
   margin-bottom: 6em;
 }
 
@@ -1154,7 +1152,7 @@
 
 #footer {
   width: 100%;
-  height: 125px;
+  height: 100px;
   background-color: #3f5760;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1170,7 +1168,7 @@
 #footer h4 {
   font-family: "Roboto", sans-serif;
   margin: 0 3em;
-  font-size: 1.38em;
+  font-size: 1em;
   font-weight: 300;
   color: #fff;
   text-align: center;

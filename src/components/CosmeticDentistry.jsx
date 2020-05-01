@@ -9,6 +9,8 @@ import image5 from "../images/Image-5.jpeg";
 import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
 import image7 from "../images/Image-7.jpg";
 
+const key = 'https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4'
+
 export default function CosmeticDentistry() {
   return (
     <div id="cosmetic-dentistry-page">
@@ -93,7 +95,7 @@ export default function CosmeticDentistry() {
           <li>Replace old, unattractive dental restorations</li>
           </ul>
         <h3 style={{ fontStyle: 'italic', marginBottom: '6em' }}>Remember, your smile speaks before you even say a word!</h3>
-        <div class="secondary-bar"></div>
+        <div className="secondary-bar"></div>
       </div>
       <iframe
         title="Google Maps Location of Dental Office"
@@ -101,7 +103,7 @@ export default function CosmeticDentistry() {
         height="372"
         frameBorder="0"
         style={{ border: 0 }}
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4"
+        src={key}
         allowFullScreen
       ></iframe>
     </div>

@@ -9,6 +9,9 @@ import image5 from "../images/Image-5.jpeg";
 import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
 import image7 from "../images/Image-7.jpg";
 
+const key =
+  "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4";
+
 export default function Xray() {
   return (
     <div id="xray-page">
@@ -99,11 +102,11 @@ export default function Xray() {
           <li>Poor tooth and root positions</li>
           <li>Problems inside a tooth or below the gum line</li>
         </ul>
-        <p className='after-list-italic' style={{ marginBottom: '3em' }}>
+        <p className="after-list-italic">
           Detecting and treating dental problems at an early stage may save you
           time, money, unnecessary discomfort, and your teeth!
         </p>
-        <h3 style={{ marginBottom: '1em' }}>Are dental X-rays safe?</h3>
+        <h3 style={{ marginBottom: "1em" }}>Are dental X-rays safe?</h3>
         <p>
           We are all exposed to natural radiation in our environment. Digital
           X-rays produce a significantly lower level of radiation compared to
@@ -114,15 +117,17 @@ export default function Xray() {
           the X-rays, thus eliminating the disposal of harmful waste and
           chemicals into the environment.
         </p>
-        <p style={{ marginBottom: '4em' }}>
+        <p style={{ marginBottom: "4em" }}>
           Even though digital X-rays produce a low level of radiation and are
           considered very safe, dentists still take necessary precautions to
           limit the patient’s exposure to radiation. These precautions include
           only taking those X-rays that are necessary and using lead apron
           shields with a thyroid collar to protect your body.
-        </p> 
-        <h3 style={{ marginBottom: '1em' }} >How often should dental X-rays be taken?</h3>
-        <p style={{ marginBottom: '10em' }}>
+        </p>
+        <h3 style={{ marginBottom: "1em" }}>
+          How often should dental X-rays be taken?
+        </h3>
+        <p style={{ marginBottom: "10em" }}>
           The need for dental X-rays depends on each patient’s dental health
           needs. Your dentist and dental hygienist will recommend X-rays based
           upon the review of your medical and dental history, a dental exam,
@@ -132,7 +137,7 @@ export default function Xray() {
           X-rays (X-rays of top and bottom teeth biting together) are
           recommended once a year to detect new dental problems.
         </p>
-        <div class="secondary-bar"></div>
+        <div className="secondary-bar"></div>
       </div>
       <iframe
         title="Google Maps Location of Dental Office"
@@ -140,7 +145,7 @@ export default function Xray() {
         height="372"
         frameBorder="0"
         style={{ border: 0 }}
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4"
+        src={key}
         allowFullScreen
       ></iframe>
     </div>
