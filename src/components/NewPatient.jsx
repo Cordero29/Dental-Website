@@ -84,7 +84,11 @@ export default function NewPatient() {
         <p>
           Prior to your first appointment, please download the forms below. Upon
           completion, please email them to{" "}
-          <a href="mailto:info@kastenbaumpros.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="mailto:info@kastenbaumpros.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             info@kastenbaumpros.com
           </a>
           .

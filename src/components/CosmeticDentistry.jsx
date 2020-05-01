@@ -9,9 +9,9 @@ import image5 from "../images/Image-5.jpeg";
 import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
 import image7 from "../images/Image-7.jpg";
 
-export default function DentalExamsCleaning() {
+export default function CosmeticDentistry() {
   return (
-    <div id="dental-exams-cleaning">
+    <div id="cosmetic-dentistry-page">
       <div className="every-other-page-overlay">
         <h1>Fred Kastenbaum, D.M.D. - Prosthodontist</h1>
       </div>
@@ -73,52 +73,30 @@ export default function DentalExamsCleaning() {
           />
         </Carousel.Item>
       </Carousel>
-      <div id="dental-exams-cleaning-content">
-        <h2>Dental Exams & Cleaning</h2>
-
-        <h3>Exam</h3>
-        <p>
-          A comprehensive dental exam will be performed by your dentist and
-          hyiegnest at your initial dental visit.
+      <div id="cosmetic-dentistry-content">
+        <h2>Cosmetic Dentistry</h2>
+        <p style={{ marginBottom: '3em' }}>
+          In the past decade there has been a dramatic interest in cosmetic
+          dentistry. We all realize that having a healthy, bright, beautiful
+          smile enhances our appearance and allows us to smile with confidence.
+          Thanks to the advances in modern cosmetic dentistry, we are able to
+          improve our teeth and our smiles quickly and painlessly.
         </p>
-        <h3 id="exams-checklist">
-          At regular check-up exams, your dentist and hygienist will perform the
-          following:
-        </h3>
+        <h3>Cosmetic dental treatments can:</h3>
         <ul>
-          <li>
-            <strong>Examination of diagnostic x-rays (radiographs):</strong>{" "}
-            Essential for detection of decay, tumors, cysts, and bone loss.
-            X-rays also help determine tooth and root positions.
-          </li>
-          <li>
-            <strong>Oral cancer screening:</strong> Check the face, neck, lips,
-            tongue, throat, tissues, and gums for any signs of oral cancer.
-          </li>
-          <li>
-            <strong>Gum disease evaluation:</strong> Check the gums and bone
-            around the teeth for any signs of periodontal disease.
-          </li>
-          <li>
-            <strong>Examination of tooth decay:</strong> All tooth surfaces will
-            be checked for decay with special dental instruments.
-          </li>
-          <li>
-            <strong>Examination of existing restorations:</strong> Check current
-            fillings, crowns, and bridges.
-          </li>
-          <li>
-            <strong>Personal home care instruction:</strong> Explaination of
-            tooth brushing and flosing.
-          </li>
-        </ul>
-        <h3 style={{ fontStyle: "italic", marginBottom: "15em" }}>
-          Call Today to Schedule an Appointment
-        </h3>
-        <div className="secondary-bar"></div>
+          <li>Change the size, shape, and alignment of teeth</li>
+          <li>Fill in unattractive spaces between teeth</li>
+          <li>Improve or correct bites</li>
+          <li>Lighten or brighten the color of teeth</li>
+          <li>Repair decayed, broken, cracked, or chipped teeth</li>
+          <li>Replace missing teeth</li>
+          <li>Replace old, unattractive dental restorations</li>
+          </ul>
+        <h3 style={{ fontStyle: 'italic', marginBottom: '6em' }}>Remember, your smile speaks before you even say a word!</h3>
+        <div class="secondary-bar"></div>
       </div>
       <iframe
-        title='Google Maps Location of Dental Office'
+        title="Google Maps Location of Dental Office"
         width="100%"
         height="372"
         frameBorder="0"

@@ -9,9 +9,9 @@ import image5 from "../images/Image-5.jpeg";
 import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
 import image7 from "../images/Image-7.jpg";
 
-export default function DentalExamsCleaning() {
+export default function TeethWhitening() {
   return (
-    <div id="dental-exams-cleaning">
+    <div id="teeth-whitening-page">
       <div className="every-other-page-overlay">
         <h1>Fred Kastenbaum, D.M.D. - Prosthodontist</h1>
       </div>
@@ -73,52 +73,26 @@ export default function DentalExamsCleaning() {
           />
         </Carousel.Item>
       </Carousel>
-      <div id="dental-exams-cleaning-content">
-        <h2>Dental Exams & Cleaning</h2>
-
-        <h3>Exam</h3>
-        <p>
-          A comprehensive dental exam will be performed by your dentist and
-          hyiegnest at your initial dental visit.
+      <div id="teeth-whitening-content">
+        <h2>Teeth Whitening</h2>
+        <p style={{ marginBottom: '3em' }}>
+          Teeth whitening is an excellent means for an individual to brighten
+          their yellowing or dull gray appearing teeth in a short painless
+          procedure in the office or with a take home kit. Not only is teeth
+          whitening effective, but it can also drastically change your smile and
+          improve your self-esteem at the same time.
         </p>
-        <h3 id="exams-checklist">
-          At regular check-up exams, your dentist and hygienist will perform the
-          following:
-        </h3>
+        <h3>Reasons for tooth whitening:</h3>
         <ul>
-          <li>
-            <strong>Examination of diagnostic x-rays (radiographs):</strong>{" "}
-            Essential for detection of decay, tumors, cysts, and bone loss.
-            X-rays also help determine tooth and root positions.
-          </li>
-          <li>
-            <strong>Oral cancer screening:</strong> Check the face, neck, lips,
-            tongue, throat, tissues, and gums for any signs of oral cancer.
-          </li>
-          <li>
-            <strong>Gum disease evaluation:</strong> Check the gums and bone
-            around the teeth for any signs of periodontal disease.
-          </li>
-          <li>
-            <strong>Examination of tooth decay:</strong> All tooth surfaces will
-            be checked for decay with special dental instruments.
-          </li>
-          <li>
-            <strong>Examination of existing restorations:</strong> Check current
-            fillings, crowns, and bridges.
-          </li>
-          <li>
-            <strong>Personal home care instruction:</strong> Explaination of
-            tooth brushing and flosing.
-          </li>
+          <li>Fluorosis (excessive fluoridation during tooth development)</li>
+          <li>Normal wear of outer tooth layer</li>
+          <li>Stained teeth due to medications (e.g. tetracycline)</li>
+          <li>Yellow, brown stained teeth</li>
         </ul>
-        <h3 style={{ fontStyle: "italic", marginBottom: "15em" }}>
-          Call Today to Schedule an Appointment
-        </h3>
-        <div className="secondary-bar"></div>
+        <div class="secondary-bar"></div>
       </div>
       <iframe
-        title='Google Maps Location of Dental Office'
+        title="Google Maps Location of Dental Office"
         width="100%"
         height="372"
         frameBorder="0"

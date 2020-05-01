@@ -64,12 +64,15 @@ $darkGreen: #245251;
     transition: 180ms ease-out;
     &:hover {
       background-color: $thatGreen;
-      color: #000;
     }
 
     a {
       text-decoration: none;
       color: $darkColor;
+
+      &:hover {
+        color: #000;
+      }
     }
   }
 
@@ -77,6 +80,21 @@ $darkGreen: #245251;
     border: none;
     padding: 0;
     border-radius: 0;
+
+    a {
+      color: $darkColor;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      padding: 0.15rem 0.8rem;
+      clear: both;
+      font-weight: 400;
+      text-align: inherit;
+      white-space: nowrap;
+      background-color: transparent;
+      border: 0;
+      font-size: 0.95em;
+    }
   }
 
   .dropdown-toggle {
@@ -495,9 +513,9 @@ $darkGreen: #245251;
   }
 }
 
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< OUR PRACTICE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// -------------------------------------------------- OUR PRACTICE --------------------------------------------------
 
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< DENTAL EXAMS AND CLEANING >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// -------------------------------------------------- DENTAL EXAMS AND CLEANING --------------------------------------------------
 
 #dental-exams-cleaning {
   #dental-exams-cleaning-content {
@@ -544,20 +562,132 @@ $darkGreen: #245251;
       height: 100%;
       margin-left: 20px;
     }
-
-    #dental-exams-cleaning-bar {
-      width: 100%;
-      height: 2px;
-      background-color: $darkColor;
-      margin: auto;
-      margin-bottom: 2em;
-    }
   }
 }
 
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< DENTAL EXAMS AND CLEANING >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+.secondary-bar {
+  width: 100%;
+  height: 2px;
+  background-color: $darkColor;
+  margin: auto;
+  margin-bottom: 1em;
+}
 
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< CLEANING AND PREVENTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// -------------------------------------------------- DENTAL EXAMS AND CLEANING --------------------------------------------------
+
+// --------------------------------------------------------- X-RAY ---------------------------------------------------------------
+
+#xray-page {
+  #xray-content {
+    width: 100%;
+    height: 100%;
+    padding: 4em;
+    line-height: 26px;
+
+    h2 {
+      color: #0c4d4e;
+      font-family: $primeFont;
+      font-weight: 600;
+      font-size: 22px;
+      position: relative;
+      margin-bottom: 1.2em;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 65px;
+        background: #0c4d4e;
+        left: -13px;
+        top: -8px;
+      }
+    }
+  }
+
+  h3 {
+    color: #000;
+    font-family: $primeFont;
+    font-weight: 600;
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  ul {
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+  }
+
+  .after-list-italic {
+    font-style: italic;
+    transform: translateY(0px);
+  }
+
+  .secondary-bar {
+    width: 100%;
+    height: 2px;
+    background-color: $darkColor;
+    margin: auto;
+    margin-bottom: 1em;
+  }
+}
+
+// --------------------------------------------------------- X-RAY ---------------------------------------------------------------
+
+// ---------------------------------------------------- ORAL CANCER EXAM ---------------------------------------------------------
+
+#oral-cancer-exam-page {
+  #oral-cancer-exam-content {
+    width: 100%;
+    height: 100%;
+    padding: 4em;
+    line-height: 26px;
+
+    h2 {
+      color: #0c4d4e;
+      font-family: $primeFont;
+      font-weight: 600;
+      font-size: 22px;
+      position: relative;
+      margin-bottom: 1.2em;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 65px;
+        background: #0c4d4e;
+        left: -13px;
+        top: -8px;
+      }
+    }
+  }
+
+  h3 {
+    color: #000;
+    font-family: $primeFont;
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+  ul {
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+    margin-bottom: 3em;
+  }
+}
+
+// ---------------------------------------------------- ORAL CANCER EXAM ---------------------------------------------------------
+
+// -------------------------------------------------- CLEANING AND PREVENTION ----------------------------------------------------
 
 #cleaning-prevention-page {
   width: 100%;
@@ -623,7 +753,7 @@ $darkGreen: #245251;
   #home-care-content {
     width: 100%;
     height: 100%;
-    padding: 5em;
+    padding: 4em;
     font-family: $primeFont;
 
     h2 {
@@ -661,9 +791,251 @@ $darkGreen: #245251;
   }
 }
 
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HOME CARE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// --------------------------------------------------- HOME CARE -----------------------------------------------------
 
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< NEW PATIENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// --------------------------------------------------- RESTORATIONS -----------------------------------------------------
+
+#restorations-page {
+  #restorations-content {
+    width: 100%;
+    height: 100%;
+    padding: 4em;
+
+    h2 {
+      color: #0c4d4e;
+      font-family: $primeFont;
+      font-weight: 600;
+      font-size: 22px;
+      position: relative;
+      margin-bottom: 1.4em;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 65px;
+        background: #0c4d4e;
+        left: -13px;
+        top: -8px;
+      }
+    }
+
+    h3 {
+      color: #000;
+      font-family: $primeFont;
+      font-weight: 600;
+      font-size: 1em;
+      margin-bottom: 1.5em;
+      margin-left: 1em;
+    }
+
+    p {
+      font-size: 1em;
+      margin-left: 1em;
+    }
+    ul {
+      margin-left: 2em;
+      margin-bottom: 6em;
+    }
+  }
+}
+
+// --------------------------------------------------- RESTORATIONS -----------------------------------------------------
+
+// --------------------------------------------------- DENTAL IMPLANTS -----------------------------------------------------
+
+#dental-implants-page {
+  #dental-implants-content {
+    width: 100%;
+    height: 100%;
+    padding: 4em;
+
+    h2 {
+      color: #0c4d4e;
+      font-family: $primeFont;
+      font-weight: 600;
+      font-size: 22px;
+      position: relative;
+      margin-bottom: 1.4em;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 65px;
+        background: #0c4d4e;
+        left: -13px;
+        top: -8px;
+      }
+    }
+
+    h3 {
+      color: #000;
+      font-family: $primeFont;
+      font-weight: 600;
+      font-size: 1em;
+      margin-bottom: 1.5em;
+      margin-left: 1em;
+    }
+
+    p {
+      font-size: 1em;
+      margin-left: 1em;
+    }
+    ul {
+      margin-left: 2em;
+      margin-bottom: 6em;
+    }
+  }
+}
+
+// --------------------------------------------------- DENTAL IMPLANTS -----------------------------------------------------
+
+// --------------------------------------------------- COSMETIC DENTISTRY -----------------------------------------------------
+
+#cosmetic-dentistry-page {
+  #cosmetic-dentistry-content {
+    width: 100%;
+    height: 100%;
+    padding: 4em;
+
+    h2 {
+      color: #0c4d4e;
+      font-family: $primeFont;
+      font-weight: 600;
+      font-size: 22px;
+      position: relative;
+      margin-bottom: 1.4em;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 65px;
+        background: #0c4d4e;
+        left: -13px;
+        top: -8px;
+      }
+    }
+
+    h3 {
+      color: #000;
+      font-family: $primeFont;
+      font-weight: 600;
+      font-size: 1em;
+      margin-bottom: 1.5em;
+      margin-left: 1em;
+    }
+
+    p {
+      font-size: 1em;
+      margin-left: 1em;
+    }
+    ul {
+      margin-left: 2em;
+      margin-bottom: 2em;
+    }
+  }
+}
+
+// --------------------------------------------------- COSMETIC DENTISTRY -----------------------------------------------------
+
+// --------------------------------------------------- TEETH WHITENING -----------------------------------------------------
+
+#teeth-whitening-page {
+  #teeth-whitening-content {
+    width: 100%;
+    height: 100%;
+    padding: 4em;
+
+    h2 {
+      color: #0c4d4e;
+      font-family: $primeFont;
+      font-weight: 600;
+      font-size: 22px;
+      position: relative;
+      margin-bottom: 1.4em;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 65px;
+        background: #0c4d4e;
+        left: -13px;
+        top: -8px;
+      }
+    }
+
+    h3 {
+      color: #000;
+      font-family: $primeFont;
+      font-weight: 600;
+      font-size: 1em;
+      margin-bottom: 1.5em;
+      margin-left: 1em;
+    }
+
+    p {
+      font-size: 1em;
+      margin-left: 1em;
+    }
+    ul {
+      margin-left: 2em;
+      margin-bottom: 6em;
+    }
+  }
+}
+
+// --------------------------------------------------- TEETH WHITENING -----------------------------------------------------
+
+// --------------------------------------------------- SEALANTS -----------------------------------------------------
+
+#sealants-page {
+  #sealants-content {
+    width: 100%;
+    height: 100%;
+    padding: 4em;
+    line-height: 19px;
+
+    h2 {
+      color: #0c4d4e;
+      font-family: $primeFont;
+      font-weight: 600;
+      font-size: 22px;
+      position: relative;
+      margin-bottom: 1.4em;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 65px;
+        background: #0c4d4e;
+        left: -13px;
+        top: -8px;
+      }
+    }
+  }
+
+  h3 {
+    color: #000;
+    font-family: $primeFont;
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    margin-left: 1em;
+  }
+
+  p {
+    font-size: 1em;
+    margin-left: 1em;
+  }
+}
+
+// --------------------------------------------------- SEALANTS -----------------------------------------------------
+
+// --------------------------------------------------- NEW PATIENT ---------------------------------------------------
 
 #new-patient-page {
   width: 100%;
@@ -702,7 +1074,6 @@ $darkGreen: #245251;
         font-weight: 600;
         color: #000;
         position: relative;
-
       }
     }
 
@@ -719,7 +1090,6 @@ $darkGreen: #245251;
       margin: 5em auto 8em auto;
       font-size: 16px;
     }
-
   }
 
   #new-patient-files {
@@ -740,15 +1110,12 @@ $darkGreen: #245251;
     }
   }
 
-
   #new-patient-bar {
     width: 100%;
     height: 2px;
     background-color: $darkColor;
     margin: auto;
   }
-
-
 }
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< NEW PATIENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

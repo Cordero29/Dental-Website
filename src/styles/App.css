@@ -73,7 +73,6 @@
 
 #main-navbar .dropdown-item:hover {
   background-color: #65c3a0;
-  color: #000;
 }
 
 #main-navbar .dropdown-item a {
@@ -81,10 +80,29 @@
   color: #3f5760;
 }
 
+#main-navbar .dropdown-item a:hover {
+  color: #000;
+}
+
 #main-navbar .dropdown-menu {
   border: none;
   padding: 0;
   border-radius: 0;
+}
+
+#main-navbar .dropdown-menu a {
+  color: #3f5760;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 0.15rem 0.8rem;
+  clear: both;
+  font-weight: 400;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  font-size: 0.95em;
 }
 
 #main-navbar .dropdown-toggle {
@@ -614,12 +632,114 @@
   margin-left: 20px;
 }
 
-#dental-exams-cleaning #dental-exams-cleaning-content #dental-exams-cleaning-bar {
+.secondary-bar {
   width: 100%;
   height: 2px;
   background-color: #3f5760;
   margin: auto;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+}
+
+#xray-page #xray-content {
+  width: 100%;
+  height: 100%;
+  padding: 4em;
+  line-height: 26px;
+}
+
+#xray-page #xray-content h2 {
+  color: #0c4d4e;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  position: relative;
+  margin-bottom: 1.2em;
+}
+
+#xray-page #xray-content h2::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 65px;
+  background: #0c4d4e;
+  left: -13px;
+  top: -8px;
+}
+
+#xray-page h3 {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+#xray-page p {
+  font-size: 1em;
+}
+
+#xray-page ul {
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+}
+
+#xray-page .after-list-italic {
+  font-style: italic;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+#xray-page .secondary-bar {
+  width: 100%;
+  height: 2px;
+  background-color: #3f5760;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+#oral-cancer-exam-page #oral-cancer-exam-content {
+  width: 100%;
+  height: 100%;
+  padding: 4em;
+  line-height: 26px;
+}
+
+#oral-cancer-exam-page #oral-cancer-exam-content h2 {
+  color: #0c4d4e;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  position: relative;
+  margin-bottom: 1.2em;
+}
+
+#oral-cancer-exam-page #oral-cancer-exam-content h2::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 65px;
+  background: #0c4d4e;
+  left: -13px;
+  top: -8px;
+}
+
+#oral-cancer-exam-page h3 {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  margin-bottom: 1.5em;
+}
+
+#oral-cancer-exam-page p {
+  font-size: 1em;
+}
+
+#oral-cancer-exam-page ul {
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+  margin-bottom: 3em;
 }
 
 #cleaning-prevention-page {
@@ -686,7 +806,7 @@
 #home-care-page #home-care-content {
   width: 100%;
   height: 100%;
-  padding: 5em;
+  padding: 4em;
   font-family: "Roboto", sans-serif;
 }
 
@@ -724,6 +844,222 @@
   height: 2px;
   background-color: #3f5760;
   margin: auto;
+}
+
+#restorations-page #restorations-content {
+  width: 100%;
+  height: 100%;
+  padding: 4em;
+}
+
+#restorations-page #restorations-content h2 {
+  color: #0c4d4e;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  position: relative;
+  margin-bottom: 1.4em;
+}
+
+#restorations-page #restorations-content h2::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 65px;
+  background: #0c4d4e;
+  left: -13px;
+  top: -8px;
+}
+
+#restorations-page #restorations-content h3 {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  margin-left: 1em;
+}
+
+#restorations-page #restorations-content p {
+  font-size: 1em;
+  margin-left: 1em;
+}
+
+#restorations-page #restorations-content ul {
+  margin-left: 2em;
+  margin-bottom: 6em;
+}
+
+#dental-implants-page #dental-implants-content {
+  width: 100%;
+  height: 100%;
+  padding: 4em;
+}
+
+#dental-implants-page #dental-implants-content h2 {
+  color: #0c4d4e;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  position: relative;
+  margin-bottom: 1.4em;
+}
+
+#dental-implants-page #dental-implants-content h2::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 65px;
+  background: #0c4d4e;
+  left: -13px;
+  top: -8px;
+}
+
+#dental-implants-page #dental-implants-content h3 {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  margin-left: 1em;
+}
+
+#dental-implants-page #dental-implants-content p {
+  font-size: 1em;
+  margin-left: 1em;
+}
+
+#dental-implants-page #dental-implants-content ul {
+  margin-left: 2em;
+  margin-bottom: 6em;
+}
+
+#cosmetic-dentistry-page #cosmetic-dentistry-content {
+  width: 100%;
+  height: 100%;
+  padding: 4em;
+}
+
+#cosmetic-dentistry-page #cosmetic-dentistry-content h2 {
+  color: #0c4d4e;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  position: relative;
+  margin-bottom: 1.4em;
+}
+
+#cosmetic-dentistry-page #cosmetic-dentistry-content h2::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 65px;
+  background: #0c4d4e;
+  left: -13px;
+  top: -8px;
+}
+
+#cosmetic-dentistry-page #cosmetic-dentistry-content h3 {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  margin-left: 1em;
+}
+
+#cosmetic-dentistry-page #cosmetic-dentistry-content p {
+  font-size: 1em;
+  margin-left: 1em;
+}
+
+#cosmetic-dentistry-page #cosmetic-dentistry-content ul {
+  margin-left: 2em;
+  margin-bottom: 2em;
+}
+
+#teeth-whitening-page #teeth-whitening-content {
+  width: 100%;
+  height: 100%;
+  padding: 4em;
+}
+
+#teeth-whitening-page #teeth-whitening-content h2 {
+  color: #0c4d4e;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  position: relative;
+  margin-bottom: 1.4em;
+}
+
+#teeth-whitening-page #teeth-whitening-content h2::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 65px;
+  background: #0c4d4e;
+  left: -13px;
+  top: -8px;
+}
+
+#teeth-whitening-page #teeth-whitening-content h3 {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  margin-left: 1em;
+}
+
+#teeth-whitening-page #teeth-whitening-content p {
+  font-size: 1em;
+  margin-left: 1em;
+}
+
+#teeth-whitening-page #teeth-whitening-content ul {
+  margin-left: 2em;
+  margin-bottom: 6em;
+}
+
+#sealants-page #sealants-content {
+  width: 100%;
+  height: 100%;
+  padding: 4em;
+  line-height: 19px;
+}
+
+#sealants-page #sealants-content h2 {
+  color: #0c4d4e;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  position: relative;
+  margin-bottom: 1.4em;
+}
+
+#sealants-page #sealants-content h2::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 65px;
+  background: #0c4d4e;
+  left: -13px;
+  top: -8px;
+}
+
+#sealants-page h3 {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  margin-left: 1em;
+}
+
+#sealants-page p {
+  font-size: 1em;
+  margin-left: 1em;
 }
 
 #new-patient-page {
