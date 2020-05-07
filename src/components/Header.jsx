@@ -10,7 +10,7 @@ import phone from "../images/phone-logo.png";
 export default function Header() {
   return (
     <>
-      <Navbar id="main-navbar" expand="xl">
+      <Navbar id="main-navbar" expand="lg">
         <Nav id="left-side-nav">
           <h1>Dr. Kastenbaum</h1>
           <a href="tel:+1-212-319-8787">

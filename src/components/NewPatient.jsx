@@ -97,14 +97,14 @@ export default function NewPatient() {
           .
         </p>
         <div id="new-patient-files">
-          <a href={file1} target="_blank" rel="noopener noreferrer">
-            Notice Of Privacy Practices
-          </a>
           <a href={file2} target="_blank" rel="noopener noreferrer">
             Medical History Form
           </a>
           <a href={file3} target="_blank" rel="noopener noreferrer">
             Informed Consent
+          </a>
+          <a href={file1} target="_blank" rel="noopener noreferrer">
+            Notice Of Privacy Practices
           </a>
           <a href={file4} target="_blank" rel="noopener noreferrer">
             HIPPA

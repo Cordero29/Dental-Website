@@ -147,7 +147,7 @@
 .homepage-image-overlay {
   position: absolute;
   width: 100%;
-  height: 655px;
+  height: 700px;
   background-color: rgba(63, 87, 96, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,6 +192,8 @@
   font-family: "Roboto", sans-serif;
   color: #fff;
   font-weight: 700;
+  padding: 45px;
+  text-align: center;
 }
 
 #our-practice-page {
@@ -1122,7 +1124,6 @@
 #new-patient-page #new-patient-files {
   width: 100%;
   height: 100%;
-  margin-left: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1141,6 +1142,8 @@
   font-size: 1em;
   font-weight: 600;
   margin-bottom: 3em;
+  text-align: center;
+  padding: 15px;
 }
 
 #new-patient-page #new-patient-bar {
@@ -1172,5 +1175,91 @@
   font-weight: 300;
   color: #fff;
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  #footer h4 {
+    font-size: 0.8em;
+  }
+  #footer #footer-item-2 {
+    margin: auto;
+  }
+  #new-patient-files {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #our-practice-page #our-practice-content .dr-fred {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #our-practice-page #our-practice-content .dr-fred .dr-fred-portrait {
+    width: 100%;
+    background-position: right;
+  }
+  #our-practice-page #our-practice-content .paula {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #our-practice-page #our-practice-content .paula .paula-portrait {
+    width: 100%;
+  }
+  #our-practice-page #our-practice-content .felix {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #our-practice-page #our-practice-content .felix .felix-portrait {
+    width: 100%;
+  }
+  #our-practice-page #our-practice-content .lauren {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #our-practice-page #our-practice-content .lauren .lauren-portrait {
+    width: 100%;
+    background-position: center top;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .dental-treatment-sections {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dental-treatment-sections .dt-diagnosis {
+    margin-bottom: 5em;
+  }
 }
 /*# sourceMappingURL=App.css.map */
