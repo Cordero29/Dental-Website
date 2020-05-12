@@ -13,17 +13,16 @@
   outline: none;
 }
 
-#main-navbar {
+.navbar {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: #3f5760;
-  height: 65px;
   width: 100%;
   z-index: 20;
 }
 
-#main-navbar #left-side-nav {
+.navbar #left-side-nav {
   width: 100%;
   height: 100%;
   max-width: 250px;
@@ -42,15 +41,16 @@
           justify-content: center;
 }
 
-#main-navbar #left-side-nav h1 {
+.navbar #left-side-nav h1 {
   font-size: 1em;
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   margin: 0;
+  padding: 0;
 }
 
-#main-navbar #left-side-nav a {
+.navbar #left-side-nav a {
   font-family: "Roboto", sans-serif;
   color: #fff;
   text-decoration: none;
@@ -59,89 +59,91 @@
   transition: 180ms ease-out;
 }
 
-#main-navbar #left-side-nav a:hover {
+.navbar #left-side-nav a:hover {
   color: #65c3a0;
 }
 
-#main-navbar .dropdown-item {
+.navbar #outside-links {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9em;
+  -webkit-transition: 180ms ease-out;
+  transition: 180ms ease-out;
+  width: 100%;
+  text-align: center;
+  margin: 0 2em;
+}
+
+.navbar #outside-links:hover {
+  color: #65c3a0;
+}
+
+.navbar .btn {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9em;
+  -webkit-transition: all 180ms ease-out;
+  transition: all 180ms ease-out;
+  width: 100%;
+  margin: 0 2em;
+}
+
+.navbar .btn:hover {
+  color: #65c3a0;
+}
+
+.navbar .dropdown-item {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 0.9em;
   -webkit-transition: 180ms ease-out;
   transition: 180ms ease-out;
+  width: 100%;
 }
 
-#main-navbar .dropdown-item:hover {
+.navbar .dropdown-item:hover {
   background-color: #65c3a0;
 }
 
-#main-navbar .dropdown-item a {
+.navbar .dropdown-item a {
   text-decoration: none;
   color: #3f5760;
 }
 
-#main-navbar .dropdown-item a:hover {
+.navbar .dropdown-item a:hover {
   color: #000;
 }
 
-#main-navbar .dropdown-menu {
+.navbar .dropdown-menu {
   border: none;
   padding: 0;
   border-radius: 0;
 }
 
-#main-navbar .dropdown-menu a {
+.navbar .dropdown-menu a {
   color: #3f5760;
 }
 
-#main-navbar .dropdown-menu a:hover {
+.navbar .dropdown-menu a:hover {
   color: #000;
 }
 
-#main-navbar .dropdown-toggle {
-  color: #fff;
-  font-weight: 700;
-  -webkit-transition: 180ms ease-out;
-  transition: 180ms ease-out;
-}
-
-#main-navbar .dropdown-toggle:hover {
-  color: #65c3a0;
-}
-
-#main-navbar .outside-links {
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.9em;
-  margin: 0 2em;
-  -webkit-transition: 180ms ease-out;
-  transition: 180ms ease-out;
-}
-
-#main-navbar .outside-links:hover {
-  color: #65c3a0;
-}
-
-#main-navbar .mr-auto {
+.navbar-nav {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 15px;
-  width: 100%;
-}
-
-#main-navbar .mr-auto .dropdown-toggle,
-#main-navbar .mr-auto nav-link {
-  font-size: 0.9em;
-  margin: 0 2em;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 3em;
 }
 
 .homepage-image-overlay {
@@ -173,7 +175,7 @@
 .every-other-page-overlay {
   position: absolute;
   width: 100%;
-  height: 450px;
+  height: 500px;
   background-color: rgba(63, 87, 96, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -846,13 +848,44 @@
   margin: auto;
 }
 
-#restorations-page #restorations-content {
+.accordion .card {
+  margin-bottom: 2em;
+  border-radius: 0;
+}
+
+.accordion .card .card-header {
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  background-color: #65c3a0;
+  text-align: left;
+  padding: 10px 13px 10px 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  border-radius: 0;
+}
+
+.accordion .card .card-header::after {
+  content: "\0025BC";
+  /* Unicode character for "plus" sign (+) */
+  font-size: 16px;
+  color: #000;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion .card .card-body {
+  border: solid 1px #65c3a0;
+  border-radius: 0;
+}
+
+#restorations-content {
   width: 100%;
   height: 100%;
   padding: 4em;
 }
 
-#restorations-page #restorations-content h2 {
+#restorations-content h2 {
   color: #0c4d4e;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -861,7 +894,7 @@
   margin-bottom: 1.4em;
 }
 
-#restorations-page #restorations-content h2::before {
+#restorations-content h2::before {
   content: "";
   position: absolute;
   width: 8px;
@@ -871,7 +904,7 @@
   top: -8px;
 }
 
-#restorations-page #restorations-content h3 {
+#restorations-content h3 {
   color: #000;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -880,12 +913,12 @@
   margin-left: 1em;
 }
 
-#restorations-page #restorations-content p {
+#restorations-content p {
   font-size: 1em;
   margin-left: 1em;
 }
 
-#restorations-page #restorations-content ul {
+#restorations-content ul {
   margin-left: 2.5em;
   margin-bottom: 6em;
 }

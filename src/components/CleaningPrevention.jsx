@@ -22,7 +22,7 @@ export default function CleaningPrevention() {
           <img
             src={image1}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -30,7 +30,7 @@ export default function CleaningPrevention() {
           <img
             src={image2}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -38,7 +38,7 @@ export default function CleaningPrevention() {
           <img
             src={image3}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -46,7 +46,7 @@ export default function CleaningPrevention() {
           <img
             src={image4}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -54,7 +54,7 @@ export default function CleaningPrevention() {
           <img
             src={image5}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -62,7 +62,7 @@ export default function CleaningPrevention() {
           <img
             src={image6}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -70,7 +70,7 @@ export default function CleaningPrevention() {
           <img
             src={image7}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>

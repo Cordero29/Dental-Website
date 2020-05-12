@@ -1,5 +1,7 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import Accordion from "react-bootstrap/Accordion";
+import Card from 'react-bootstrap/Card'
 
 import image1 from "../images/Image-1.jpeg";
 import image2 from "../images/Image-2.jpeg";
@@ -23,7 +25,7 @@ export default function Restorations() {
           <img
             src={image1}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -31,7 +33,7 @@ export default function Restorations() {
           <img
             src={image2}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -39,7 +41,7 @@ export default function Restorations() {
           <img
             src={image3}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -47,7 +49,7 @@ export default function Restorations() {
           <img
             src={image4}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -55,7 +57,7 @@ export default function Restorations() {
           <img
             src={image5}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -63,7 +65,7 @@ export default function Restorations() {
           <img
             src={image6}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -71,7 +73,7 @@ export default function Restorations() {
           <img
             src={image7}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -98,6 +100,90 @@ export default function Restorations() {
           <li>Replace old, unattractive dental restorations</li>
           <li>Restore normal eating and chewing</li>
         </ul>
+        <Accordion defaultActiveKey="0">
+          <Card>
+            <Accordion.Toggle as={Card.Header} eventKey="0">
+            Composite Fillings
+            </Accordion.Toggle>
+            <Accordion.Collapse eventKey="0">
+              <Card.Body>
+              <p>
+            A composite (tooth colored) filling is used to repair a tooth that
+            is affected by decay, cracks, fractures, etc. The decayed or
+            affected portion of the tooth will be removed and then filled with a
+            composite filling, because composite fillings are tooth colored,
+            they can be closely matched to the color of existing teeth, and are
+            more aesthetically suited for use in front teeth or the more visible
+            areas of the mouth. As with most dental restorations, composite
+            fillings are not permanent and may someday have to be replaced, but
+            they are very durable, and will last many years, giving you a long
+            lasting, beautiful smile.
+          </p>
+          <h3>Reasons for composite fillings:</h3>
+          <ul style={{ marginBottom: '1.5em' }} >
+            <li>Chipped teeth</li>
+            <li>Closing space between two teeth</li>
+            <li>Cracked or broken teeth</li>
+            <li>Decayed teeth</li>
+            <li>Worn teeth</li>
+          </ul>
+          <h3>How are composite fillings placed?</h3>
+          <p>
+            Composite fillings are usually placed in one appointment. While the
+            tooth is numb, your dentist will remove decay as necessary. The
+            space will then be thoroughly cleaned and carefully prepared before
+            the new filling is placed. If the decay was near the nerve of the
+            tooth, a special medication will be applied for added protection.
+            The composite filling will then be precisely placed, shaped, and
+            polished, restoring your tooth to its original shape and function.
+            It is normal to experience sensitivity to hot and cold when
+            composite fillings are first placed, however this will subside
+            shortly after your tooth acclimates to the new filling.
+          </p>
+          <p style={{ marginBottom: '2em' }} >
+            You will be given care instructions at the conclusion of your
+            treatment. Good oral hygiene practices, eating habits, and regular
+            dental visits will aid in the life of your new fillings.
+          </p>
+          <h3 style={{ marginBottom: 0 }}>Call Today to Schedule an Appointment</h3>
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+          <Card>
+            <Accordion.Toggle as={Card.Header} eventKey="1">
+            Ceramic Inlays/Onlays
+            </Accordion.Toggle>
+            <Accordion.Collapse eventKey="1">
+              <Card.Body>
+              <p style={{ marginBottom: '2em' }}>
+            Ceramic Inlays/Onlays can be utilized to conservatively repair teeth
+            that have large defective fillings or have been damaged by decay or
+            trauma. Onlays are essentially identical to inlays with the
+            exception that one or more of the chewing cusps have also been
+            affected and need to be included in the restoration.
+          </p>
+          <h3 style={{ marginBottom: 0 }}>Call Today to Schedule an Appointment</h3>
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+          <Card>
+            <Accordion.Toggle as={Card.Header} eventKey="2">
+            Ceramic Crowns
+            </Accordion.Toggle>
+            <Accordion.Collapse eventKey="2">
+              <Card.Body>
+              <p style={{ marginBottom: '2em' }}>
+            Ceramic crowns are ideal restorations for anterior teeth as they are
+            more translucent, allowing for the light reflection of the natural
+            tooth to come through. With the use of these materials we are able
+            to fabricate an extremely aesthetic restoration that is strong,
+            pleasing and biocompatible.
+          </p>
+          <h3 style={{ marginBottom: 0 }}>Call Today to Schedule an Appointment</h3>
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+        </Accordion>
         <div className="secondary-bar"></div>
       </div>
       <iframe

@@ -1,5 +1,7 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import Accordion from "react-bootstrap/Accordion";
+import Card from 'react-bootstrap/Card'
 
 import image1 from "../images/Image-1.jpeg";
 import image2 from "../images/Image-2.jpeg";
@@ -23,7 +25,7 @@ export default function DentalImplants() {
           <img
             src={image1}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -31,7 +33,7 @@ export default function DentalImplants() {
           <img
             src={image2}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -39,7 +41,7 @@ export default function DentalImplants() {
           <img
             src={image3}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -47,7 +49,7 @@ export default function DentalImplants() {
           <img
             src={image4}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -55,7 +57,7 @@ export default function DentalImplants() {
           <img
             src={image5}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -63,7 +65,7 @@ export default function DentalImplants() {
           <img
             src={image6}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -71,7 +73,7 @@ export default function DentalImplants() {
           <img
             src={image7}
             width="100%"
-            height="450px"
+            height="500px"
             alt="view of the dental office"
           />
         </Carousel.Item>
@@ -136,6 +138,53 @@ export default function DentalImplants() {
           in the life of your new implant.
         </p>
         <div className="secondary-bar"></div>
+        <Accordion defaultActiveKey="0">
+          <Card>
+            <Accordion.Toggle as={Card.Header} eventKey="0">
+              Composite Fillings
+            </Accordion.Toggle>
+            <Accordion.Collapse eventKey="0">
+              <Card.Body>
+                <p style={{ marginBottom: '2em' }}>
+                  Implant supported crowns are individual ceramic restorations
+                  supported by a dental implant and used when a natural tooth is
+                  lost due to trauma, infection or was congenitally missing. A
+                  single implant crown is constructed and connected to an
+                  implant as a unique restoration creating a natural aesthetic
+                  look and feel.
+                </p>
+                <h3 style={{ marginBottom: 0 }}>
+                  Call Today to Schedule an Appointment
+                </h3>
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+          <Card>
+            <Accordion.Toggle as={Card.Header} eventKey="1">
+              Composite Fillings
+            </Accordion.Toggle>
+            <Accordion.Collapse eventKey="1">
+              <Card.Body>
+                <p style={{ marginBottom: '2em' }}>
+                  A full arch replacement consists of a ceramic restoration
+                  supported by multiple dental implants. When multiple teeth are
+                  missing, a full arch replacement is the best choice of
+                  treatment, because unlike a conventional bridge, adjacent
+                  teeth do not have to be prepared. Distinct from a partial or
+                  full denture, a full arch remplacement is not removable by the
+                  patient. When the patient is completely edentulous, a full
+                  arch implant supported restoration is the ideal course of
+                  treatment. Compared with a removable denture, an implant
+                  supported restoration offers the patient the appearance and
+                  function of their own natural teeth.
+                </p>
+                <h3 style={{ marginBottom: 0 }}>
+                  Call Today to Schedule an Appointment
+                </h3>
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+        </Accordion>
       </div>
       <iframe
         title="Google Maps Location of Dental Office"

@@ -20,11 +20,10 @@ $darkGreen: #245251;
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< NAVBAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-#main-navbar {
+.navbar {
   position: sticky;
   top: 0;
   background-color: $darkColor;
-  height: 65px;
   width: 100%;
   z-index: 20;
 
@@ -43,6 +42,7 @@ $darkGreen: #245251;
       font-family: $primeFont;
       font-weight: 500;
       margin: 0;
+      padding: 0;
     }
 
     a {
@@ -56,12 +56,43 @@ $darkGreen: #245251;
       }
     }
   }
+  #outside-links {
+    font-family: $primeFont;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9em;
+    transition: 180ms ease-out;
+    width: 100%;
+    text-align: center;
+    margin: 0 2em;
+
+    &:hover {
+      color: $thatGreen;
+    }
+  }
+
+  .btn {
+    font-family: $primeFont;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9em;
+    transition: all 180ms ease-out;
+    width: 100%;
+    margin: 0 2em;
+
+    &:hover {
+      color: $thatGreen;
+    }
+  }
 
   .dropdown-item {
     text-decoration: none;
     font-family: $primeFont;
     font-size: 0.9em;
     transition: 180ms ease-out;
+    width: 100%;
     &:hover {
       background-color: $thatGreen;
     }
@@ -75,7 +106,6 @@ $darkGreen: #245251;
       }
     }
   }
-
   .dropdown-menu {
     border: none;
     padding: 0;
@@ -89,43 +119,14 @@ $darkGreen: #245251;
       }
     }
   }
+}
 
-  .dropdown-toggle {
-    color: #fff;
-    font-weight: 700;
-    transition: 180ms ease-out;
-    &:hover {
-      color: $thatGreen;
-    }
-  }
-
-  .outside-links {
-    font-family: $primeFont;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 0.9em;
-    margin: 0 2em;
-    transition: 180ms ease-out;
-
-    &:hover {
-      color: $thatGreen;
-    }
-  }
-
-  .mr-auto {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 15px;
-    width: 100%;
-
-    .dropdown-toggle,
-    nav-link {
-      font-size: 0.9em;
-      margin: 0 2em;
-    }
-  }
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 3em;
 }
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< NAVBAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -156,7 +157,7 @@ $darkGreen: #245251;
 .every-other-page-overlay {
   position: absolute;
   width: 100%;
-  height: 450px;
+  height: 500px;
   background-color: rgba(63, 87, 96, 0.3);
   display: flex;
   align-items: center;
@@ -795,50 +796,87 @@ $darkGreen: #245251;
 
 // --------------------------------------------------- HOME CARE -----------------------------------------------------
 
+// --------------------------------------------------- ACCORDION -----------------------------------------------------
+
+.accordion {
+  .card {
+    margin-bottom: 2em;
+    border-radius: 0;
+
+    
+    .card-header {
+      cursor: pointer;
+      border: none;
+      width: 100%;
+      background-color: $thatGreen;
+      text-align: left;
+      padding: 10px 13px 10px 30px;
+      font-family: $primeFont;
+      font-weight: 600;
+      border-radius: 0;
+
+      &::after {
+        content: "\0025BC"; /* Unicode character for "plus" sign (+) */
+        font-size: 16px;
+        color: #000;
+        float: right;
+        margin-left: 5px;
+      }
+
+    }
+
+    .card-body {
+      border: solid 1px $thatGreen;
+      border-radius: 0;
+    }
+  }
+}
+
+
+// --------------------------------------------------- ACCORDION -----------------------------------------------------
+
 // --------------------------------------------------- RESTORATIONS -----------------------------------------------------
 
-#restorations-page {
-  #restorations-content {
-    width: 100%;
-    height: 100%;
-    padding: 4em;
+#restorations-content {
+  width: 100%;
+  height: 100%;
+  padding: 4em;
 
-    h2 {
-      color: #0c4d4e;
-      font-family: $primeFont;
-      font-weight: 600;
-      font-size: 22px;
-      position: relative;
-      margin-bottom: 1.4em;
+  h2 {
+    color: #0c4d4e;
+    font-family: $primeFont;
+    font-weight: 600;
+    font-size: 22px;
+    position: relative;
+    margin-bottom: 1.4em;
 
-      &::before {
-        content: "";
-        position: absolute;
-        width: 8px;
-        height: 65px;
-        background: #0c4d4e;
-        left: -13px;
-        top: -8px;
-      }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 65px;
+      background: #0c4d4e;
+      left: -13px;
+      top: -8px;
     }
+  }
 
-    h3 {
-      color: #000;
-      font-family: $primeFont;
-      font-weight: 600;
-      font-size: 1em;
-      margin-bottom: 1.5em;
-      margin-left: 1em;
-    }
+  h3 {
+    color: #000;
+    font-family: $primeFont;
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    margin-left: 1em;
+  }
 
-    p {
-      font-size: 1em;
-      margin-left: 1em;
-    }
-    ul {
-      margin-left: 2.5em;
-      margin-bottom: 6em;
-    }
+  p {
+    font-size: 1em;
+    margin-left: 1em;
+  }
+  ul {
+    margin-left: 2.5em;
+    margin-bottom: 6em;
   }
 }
 
@@ -1147,7 +1185,6 @@ $darkGreen: #245251;
 // --------------------------------------------------- MEDIA QUERIES ---------------------------------------------------
 
 @media screen and (max-width: 800px) {
-
   #footer {
     h4 {
       font-size: 0.8em;
@@ -1164,42 +1201,40 @@ $darkGreen: #245251;
     flex-direction: column;
   }
 
-#our-practice-page {
-  #our-practice-content {
-    .dr-fred {
-      flex-direction: column;
-      .dr-fred-portrait {
-        width: 100%;
-        background-position: right;
+  #our-practice-page {
+    #our-practice-content {
+      .dr-fred {
+        flex-direction: column;
+        .dr-fred-portrait {
+          width: 100%;
+          background-position: right;
+        }
       }
-    }
 
-    .paula {
-      flex-direction: column;
-      .paula-portrait {
-        width: 100%;
+      .paula {
+        flex-direction: column;
+        .paula-portrait {
+          width: 100%;
+        }
       }
-    }
 
-    .felix {
-      flex-direction: column;
-      .felix-portrait {
-        width: 100%;
+      .felix {
+        flex-direction: column;
+        .felix-portrait {
+          width: 100%;
+        }
       }
-    }
 
-    .lauren {
-      flex-direction: column;
-      .lauren-portrait {
-        width: 100%;
-        background-position: center top;
-        height: 400px;
+      .lauren {
+        flex-direction: column;
+        .lauren-portrait {
+          width: 100%;
+          background-position: center top;
+          height: 400px;
+        }
       }
-      
     }
   }
-}
-
 }
 
 @media screen and (max-width: 1200px) {
