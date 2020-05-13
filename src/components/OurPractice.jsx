@@ -17,7 +17,7 @@ export default function OurPractice() {
       <div className="homepage-image-overlay">
         <h1>Fred Kastenbaum, D.M.D. - Prosthodontist</h1>
       </div>
-      <Carousel className="carousel" interval="3000">
+      <Carousel className="carousel" interval="5000"  >
         <Carousel.Item>
           <img
             src={image1}
