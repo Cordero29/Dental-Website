@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
@@ -9,12 +9,14 @@ import image3 from "../images/Image-3.jpeg";
 import image4 from "../images/Image-4.jpg";
 import image5 from "../images/Image-5.jpeg";
 import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
-import image7 from "../images/Image-7.jpg";
 
 const key =
   "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4";
 
 export default function CosmeticDentistry() {
+
+  const [arrow, setArrow] = useState(false);
+
   return (
     <div id="cosmetic-dentistry-page">
       <div className="every-other-page-overlay">
@@ -69,14 +71,6 @@ export default function CosmeticDentistry() {
             alt="view of the dental office"
           />
         </Carousel.Item>
-        <Carousel.Item>
-          <img
-            src={image7}
-            width="100%"
-            height="500px"
-            alt="view of the dental office"
-          />
-        </Carousel.Item>
       </Carousel>
       <div id="cosmetic-dentistry-content">
         <h2>Cosmetic Dentistry</h2>
@@ -100,11 +94,11 @@ export default function CosmeticDentistry() {
         <h3 style={{ fontStyle: "italic", marginBottom: "6em" }}>
           Remember, your smile speaks before you even say a word!
         </h3>
-        <div className="secondary-bar"></div>
-      <Accordion defaultActiveKey="0">
+      <Accordion>
         <Card>
-          <Accordion.Toggle as={Card.Header} eventKey="0">
-            Veneers
+          <Accordion.Toggle as={Card.Header} eventKey="0" onClick={() => setArrow(!arrow)}>
+              Veneers
+              <p>{ arrow ? "▲" : "▼" }</p>
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="0">
             <Card.Body>
@@ -122,8 +116,9 @@ export default function CosmeticDentistry() {
           </Accordion.Collapse>
         </Card>
         <Card>
-          <Accordion.Toggle as={Card.Header} eventKey="1">
-            Ceramic Inlays/Onlays
+          <Accordion.Toggle as={Card.Header} eventKey="1" onClick={() => setArrow(!arrow)}>
+              Ceramic Inlays/Onlays
+              <p>{ arrow ? "▲" : "▼" }</p>
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="1">
             <Card.Body>
@@ -141,6 +136,7 @@ export default function CosmeticDentistry() {
           </Accordion.Collapse>
         </Card>
         </Accordion>
+        <div className="secondary-bar"></div>
         </div>
       <iframe
         title="Google Maps Location of Dental Office"

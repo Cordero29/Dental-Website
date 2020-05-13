@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Accordion from "react-bootstrap/Accordion";
-import Card from 'react-bootstrap/Card'
+import Card from "react-bootstrap/Card";
 
 import image1 from "../images/Image-1.jpeg";
 import image2 from "../images/Image-2.jpeg";
@@ -9,12 +9,14 @@ import image3 from "../images/Image-3.jpeg";
 import image4 from "../images/Image-4.jpg";
 import image5 from "../images/Image-5.jpeg";
 import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
-import image7 from "../images/Image-7.jpg";
 
 const key =
   "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4";
 
 export default function DentalImplants() {
+  const [arrow1, setArrow1] = useState(false);
+  const [arrow2, setArrow2] = useState(false);
+
   return (
     <div id="dental-implants-page">
       <div className="every-other-page-overlay">
@@ -64,14 +66,6 @@ export default function DentalImplants() {
         <Carousel.Item>
           <img
             src={image6}
-            width="100%"
-            height="500px"
-            alt="view of the dental office"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            src={image7}
             width="100%"
             height="500px"
             alt="view of the dental office"
@@ -137,15 +131,19 @@ export default function DentalImplants() {
           Good oral hygiene, eating habits, and regular dental visits will aid
           in the life of your new implant.
         </p>
-        <div className="secondary-bar"></div>
-        <Accordion defaultActiveKey="0">
+        <Accordion>
           <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="0">
-              Composite Fillings
+            <Accordion.Toggle
+              as={Card.Header}
+              eventKey="0"
+              onClick={() => setArrow1(!arrow1)}
+            >
+              Single Tooth Replacement
+              <p>{arrow1 ? "▲" : "▼"}</p>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
               <Card.Body>
-                <p style={{ marginBottom: '2em' }}>
+                <p style={{ marginBottom: "2em" }}>
                   Implant supported crowns are individual ceramic restorations
                   supported by a dental implant and used when a natural tooth is
                   lost due to trauma, infection or was congenitally missing. A
@@ -160,12 +158,17 @@ export default function DentalImplants() {
             </Accordion.Collapse>
           </Card>
           <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="1">
-              Composite Fillings
+            <Accordion.Toggle
+              as={Card.Header}
+              eventKey="1"
+              onClick={() => setArrow2(!arrow2)}
+            >
+              Full Arch Replacement
+              <p>{arrow2 ? "▲" : "▼"}</p>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
               <Card.Body>
-                <p style={{ marginBottom: '2em' }}>
+                <p style={{ marginBottom: "2em" }}>
                   A full arch replacement consists of a ceramic restoration
                   supported by multiple dental implants. When multiple teeth are
                   missing, a full arch replacement is the best choice of
@@ -185,6 +188,7 @@ export default function DentalImplants() {
             </Accordion.Collapse>
           </Card>
         </Accordion>
+        <div className="secondary-bar"></div>
       </div>
       <iframe
         title="Google Maps Location of Dental Office"

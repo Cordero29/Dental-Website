@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Accordion from "react-bootstrap/Accordion";
 import Card from 'react-bootstrap/Card'
@@ -9,12 +9,16 @@ import image3 from "../images/Image-3.jpeg";
 import image4 from "../images/Image-4.jpg";
 import image5 from "../images/Image-5.jpeg";
 import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
-import image7 from "../images/Image-7.jpg";
 
 const key =
   "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4";
 
 export default function Restorations() {
+
+  const [arrow1, setArrow1] = useState(false);
+  const [arrow2, setArrow2] = useState(false);
+  const [arrow3, setArrow3] = useState(false);
+
   return (
     <div id="restorations-page">
       <div className="every-other-page-overlay">
@@ -69,14 +73,6 @@ export default function Restorations() {
             alt="view of the dental office"
           />
         </Carousel.Item>
-        <Carousel.Item>
-          <img
-            src={image7}
-            width="100%"
-            height="500px"
-            alt="view of the dental office"
-          />
-        </Carousel.Item>
       </Carousel>
       <div id="restorations-content">
         <h2>Restorations</h2>
@@ -100,10 +96,11 @@ export default function Restorations() {
           <li>Replace old, unattractive dental restorations</li>
           <li>Restore normal eating and chewing</li>
         </ul>
-        <Accordion defaultActiveKey="0">
+        <Accordion>
           <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="0">
-            Composite Fillings
+            <Accordion.Toggle as={Card.Header} eventKey="0" onClick={() => setArrow1(!arrow1)}>
+              Composite Fillings
+              <p>{ arrow1 ? "▲" : "▼" }</p>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
               <Card.Body>
@@ -150,8 +147,9 @@ export default function Restorations() {
             </Accordion.Collapse>
           </Card>
           <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="1">
-            Ceramic Inlays/Onlays
+            <Accordion.Toggle as={Card.Header} eventKey="1" onClick={() => setArrow2(!arrow2)}>
+              Ceramic Inlays/Onlays
+              <p>{ arrow2 ? "▲" : "▼" }</p>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
               <Card.Body>
@@ -167,8 +165,9 @@ export default function Restorations() {
             </Accordion.Collapse>
           </Card>
           <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="2">
-            Ceramic Crowns
+            <Accordion.Toggle as={Card.Header} eventKey="2" onClick={() => setArrow3(!arrow3)}>
+              Ceramic Crowns
+              <p>{ arrow3 ? "▲" : "▼" }</p>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="2">
               <Card.Body>

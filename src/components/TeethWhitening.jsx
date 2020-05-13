@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
@@ -9,12 +9,15 @@ import image3 from "../images/Image-3.jpeg";
 import image4 from "../images/Image-4.jpg";
 import image5 from "../images/Image-5.jpeg";
 import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
-import image7 from "../images/Image-7.jpg";
 
 const key =
   "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4";
 
 export default function TeethWhitening() {
+
+  const [arrow1, setArrow1] = useState(true);
+  const [arrow2, setArrow2] = useState(true);
+
   return (
     <div id="teeth-whitening-page">
       <div className="every-other-page-overlay">
@@ -69,14 +72,6 @@ export default function TeethWhitening() {
             alt="view of the dental office"
           />
         </Carousel.Item>
-        <Carousel.Item>
-          <img
-            src={image7}
-            width="100%"
-            height="500px"
-            alt="view of the dental office"
-          />
-        </Carousel.Item>
       </Carousel>
       <div id="teeth-whitening-content">
         <h2>Teeth Whitening</h2>
@@ -94,11 +89,11 @@ export default function TeethWhitening() {
           <li>Stained teeth due to medications (e.g. tetracycline)</li>
           <li>Yellow, brown stained teeth</li>
         </ul>
-        <div className="secondary-bar"></div>
-        <Accordion defaultActiveKey="0">
+        <Accordion>
           <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="0">
+            <Accordion.Toggle as={Card.Header} eventKey="0" onClick={() => setArrow1(!arrow1)}>
               Zoom!®
+              <p>{ arrow1 ? "▼" : "▲" }</p>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
               <Card.Body>
@@ -126,7 +121,7 @@ export default function TeethWhitening() {
                   Zoom!® has many advantages over these other treatments,
                   including:
                 </h3>
-                <ul style={{ marginBottom: '2em' }}>
+                <ul style={{ marginBottom: "2em" }}>
                   <li>All teeth treated simultaneously</li>
                   <li>Faster treatment times</li>
                   <li>Longer lasting results</li>
@@ -137,7 +132,7 @@ export default function TeethWhitening() {
                   <li>Safe procedure and treatment</li>
                   <li>Treatments are performed by an experienced hygienist</li>
                 </ul>
-                <p style={{ marginBottom: '3em', fontStyle: 'italic' }}>
+                <p style={{ marginBottom: "3em", fontStyle: "italic" }}>
                   It is important to seek advice from a dentist prior to
                   beginning a bleaching regime. Women who are pregnant or
                   lactating should not seek bleaching treatment.
@@ -170,9 +165,11 @@ export default function TeethWhitening() {
                   disease is an issue, these need to be controlled before the
                   bleaching treatment is performed.
                 </p>
-                <h3 style={{ marginBottom: '2em' }}>How is the Zoom!® treatment performed?</h3>
+                <h3 style={{ marginBottom: "2em" }}>
+                  How is the Zoom!® treatment performed?
+                </h3>
                 <h3>Brief overview of the Zoom!® procedure:</h3>
-                <ul style={{ marginBottom: '3em' }}>
+                <ul style={{ marginBottom: "3em" }}>
                   <li>
                     Cheek retractors will be placed to expose the entire surface
                     of the teeth
@@ -204,13 +201,16 @@ export default function TeethWhitening() {
                   <li>The gel will be removed for the final time</li>
                 </ul>
                 <h3>What happens after treatment?</h3>
-                <p style={{ marginBottom: '2em' }}>
+                <p style={{ marginBottom: "2em" }}>
                   The dentist and hygienist recommend flossing once a day and
                   thorough cleaning with anti-sensitivity toothpaste twice a
                   day,. These post-treatment measures will ensure that your
                   smile stays its whitest for a long time.
                 </p>
-                <h3 style={{ fontStyle: 'italic', marginBottom: '3em' }}>If you have questions about the Zoom!® Chairside System, please consult with your dentist or hygenist.</h3>
+                <h3 style={{ fontStyle: "italic", marginBottom: "3em" }}>
+                  If you have questions about the Zoom!® Chairside System,
+                  please consult with your dentist or hygenist.
+                </h3>
                 <h3 style={{ marginBottom: 0 }}>
                   Call Today to Schedule an Appointment
                 </h3>
@@ -218,8 +218,9 @@ export default function TeethWhitening() {
             </Accordion.Collapse>
           </Card>
           <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="1">
+            <Accordion.Toggle as={Card.Header} eventKey="1" onClick={() => setArrow2(!arrow2)} >
               Take Home
+               <p>{ arrow2 ? "▼" : "▲" }</p>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
               <Card.Body>
@@ -239,6 +240,7 @@ export default function TeethWhitening() {
             </Accordion.Collapse>
           </Card>
         </Accordion>
+        <div className="secondary-bar"></div>
       </div>
       <iframe
         title="Google Maps Location of Dental Office"

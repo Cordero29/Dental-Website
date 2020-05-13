@@ -13,6 +13,25 @@
   outline: none;
 }
 
+.navbar-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transform: translate(-2em);
+          transform: translate(-2em);
+}
+
+.navbar-nav div {
+  margin-left: 2em;
+}
+
 .navbar {
   position: -webkit-sticky;
   position: sticky;
@@ -48,6 +67,9 @@
   font-weight: 500;
   margin: 0;
   padding: 0;
+  margin-left: 0.5em;
+  -webkit-transform: translate(-2px, 5px);
+          transform: translate(-2px, 5px);
 }
 
 .navbar #left-side-nav a {
@@ -63,17 +85,21 @@
   color: #65c3a0;
 }
 
+.navbar #left-side-nav a img {
+  margin-right: 0.5em;
+  -webkit-transform: translateY(-5.5px);
+          transform: translateY(-5.5px);
+}
+
 .navbar #outside-links {
   font-family: "Roboto", sans-serif;
   color: #fff;
   text-decoration: none;
   font-weight: 700;
-  font-size: 0.9em;
+  font-size: 16px;
   -webkit-transition: 180ms ease-out;
   transition: 180ms ease-out;
-  width: 100%;
   text-align: center;
-  margin: 0 2em;
 }
 
 .navbar #outside-links:hover {
@@ -85,11 +111,13 @@
   color: #fff;
   text-decoration: none;
   font-weight: 700;
-  font-size: 0.9em;
+  font-size: 16px;
   -webkit-transition: all 180ms ease-out;
   transition: all 180ms ease-out;
-  width: 100%;
-  margin: 0 2em;
+  border: none;
+  border-radius: 0;
+  padding: 8px;
+  margin: 0;
 }
 
 .navbar .btn:hover {
@@ -99,7 +127,7 @@
 .navbar .dropdown-item {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  font-size: 0.9em;
+  font-size: 16px;
   -webkit-transition: 180ms ease-out;
   transition: 180ms ease-out;
   width: 100%;
@@ -122,6 +150,8 @@
   border: none;
   padding: 0;
   border-radius: 0;
+  -webkit-transform: translateX(-73px);
+          transform: translateX(-73px);
 }
 
 .navbar .dropdown-menu a {
@@ -130,20 +160,6 @@
 
 .navbar .dropdown-menu a:hover {
   color: #000;
-}
-
-.navbar-nav {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 3em;
 }
 
 .homepage-image-overlay {
@@ -203,13 +219,13 @@
   height: 100%;
 }
 
-#our-practice-page #our-practice-content {
+#our-practice-content {
   width: 100%;
   height: 100%;
-  padding: 5em;
+  padding: 3em;
 }
 
-#our-practice-page #our-practice-content h3 {
+#our-practice-content h3 {
   color: #0c4d4e;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -218,7 +234,7 @@
   margin-bottom: 2em;
 }
 
-#our-practice-page #our-practice-content h3::before {
+#our-practice-content h3::before {
   content: "";
   position: absolute;
   width: 8px;
@@ -228,7 +244,7 @@
   top: -8px;
 }
 
-#our-practice-page #our-practice-content .dr-fred {
+#our-practice-content .dr-fred {
   width: 100%;
   height: 100%;
   padding: 15px;
@@ -248,7 +264,7 @@
           justify-content: flex-start;
 }
 
-#our-practice-page #our-practice-content .dr-fred .dr-fred-portrait {
+#our-practice-content .dr-fred .dr-fred-portrait {
   background: url("../images/dr-fred-img.JPG");
   width: 800px;
   height: 480px;
@@ -257,7 +273,7 @@
   background-repeat: no-repeat;
 }
 
-#our-practice-page #our-practice-content .dr-fred .dr-fred-bio {
+#our-practice-content .dr-fred .dr-fred-bio {
   width: 100%;
   height: 100%;
   padding: 30px 40px;
@@ -266,19 +282,18 @@
   color: #fff;
 }
 
-#our-practice-page #our-practice-content .dr-fred .dr-fred-bio h2 {
+#our-practice-content .dr-fred .dr-fred-bio h2 {
   font-size: 35px;
   font-weight: 600;
   margin-bottom: 0.5em;
 }
 
-#our-practice-page #our-practice-content .dr-fred .dr-fred-bio p {
+#our-practice-content .dr-fred .dr-fred-bio p {
   font-size: 16px;
-  font-weight: 600;
   line-height: 19px;
 }
 
-#our-practice-page #our-practice-content .paula {
+#our-practice-content .paula {
   width: 100%;
   height: 100%;
   padding: 15px;
@@ -298,7 +313,7 @@
           justify-content: flex-start;
 }
 
-#our-practice-page #our-practice-content .paula .paula-portrait {
+#our-practice-content .paula .paula-portrait {
   background: url("../images/paula-img.png");
   width: 288px;
   height: 288px;
@@ -307,7 +322,7 @@
   background-repeat: no-repeat;
 }
 
-#our-practice-page #our-practice-content .paula .paula-bio {
+#our-practice-content .paula .paula-bio {
   width: 100%;
   height: 100%;
   padding: 30px 40px;
@@ -316,19 +331,18 @@
   color: #fff;
 }
 
-#our-practice-page #our-practice-content .paula .paula-bio h2 {
+#our-practice-content .paula .paula-bio h2 {
   font-size: 35px;
   font-weight: 600;
   margin-bottom: 0.8em;
 }
 
-#our-practice-page #our-practice-content .paula .paula-bio p {
+#our-practice-content .paula .paula-bio p {
   font-size: 16px;
-  font-weight: 600;
   line-height: 19px;
 }
 
-#our-practice-page #our-practice-content .felix {
+#our-practice-content .felix {
   width: 100%;
   height: 100%;
   padding: 15px;
@@ -348,7 +362,7 @@
           justify-content: flex-start;
 }
 
-#our-practice-page #our-practice-content .felix .felix-portrait {
+#our-practice-content .felix .felix-portrait {
   background: url("../images/felix-img.JPEG");
   width: 288px;
   height: 288px;
@@ -357,7 +371,7 @@
   background-repeat: no-repeat;
 }
 
-#our-practice-page #our-practice-content .felix .felix-bio {
+#our-practice-content .felix .felix-bio {
   width: 100%;
   height: 100%;
   padding: 30px 40px;
@@ -366,19 +380,18 @@
   color: #fff;
 }
 
-#our-practice-page #our-practice-content .felix .felix-bio h2 {
+#our-practice-content .felix .felix-bio h2 {
   font-size: 35px;
   font-weight: 600;
   margin-bottom: 0.8em;
 }
 
-#our-practice-page #our-practice-content .felix .felix-bio p {
+#our-practice-content .felix .felix-bio p {
   font-size: 16px;
-  font-weight: 600;
   line-height: 19px;
 }
 
-#our-practice-page #our-practice-content .lauren {
+#our-practice-content .lauren {
   width: 100%;
   height: 100%;
   padding: 15px;
@@ -398,7 +411,7 @@
           justify-content: flex-start;
 }
 
-#our-practice-page #our-practice-content .lauren .lauren-portrait {
+#our-practice-content .lauren .lauren-portrait {
   background: url("../images/lauren-img.jpeg");
   width: 288px;
   height: 288px;
@@ -407,7 +420,7 @@
   background-repeat: no-repeat;
 }
 
-#our-practice-page #our-practice-content .lauren .lauren-bio {
+#our-practice-content .lauren .lauren-bio {
   width: 100%;
   height: 100%;
   padding: 30px 40px;
@@ -416,37 +429,36 @@
   color: #fff;
 }
 
-#our-practice-page #our-practice-content .lauren .lauren-bio h2 {
+#our-practice-content .lauren .lauren-bio h2 {
   font-size: 35px;
   font-weight: 600;
   margin-bottom: 0.8em;
 }
 
-#our-practice-page #our-practice-content .lauren .lauren-bio p {
+#our-practice-content .lauren .lauren-bio p {
   font-size: 16px;
-  font-weight: 600;
   line-height: 19px;
 }
 
-#our-practice-page .our-practice-bar {
+.our-practice-bar {
   width: 100%;
   height: 1px;
   background-color: #3f5760;
   margin: auto;
 }
 
-#our-practice-page .second {
+.second {
   margin-bottom: 1em;
 }
 
-#our-practice-page .dental-treatment-content {
+.dental-treatment-content {
   width: 100%;
   height: 100%;
   padding: 3em;
   margin: auto;
 }
 
-#our-practice-page .dental-treatment-content h3 {
+.dental-treatment-content h3 {
   color: #0c4d4e;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -455,7 +467,7 @@
   margin-bottom: 2em;
 }
 
-#our-practice-page .dental-treatment-content h3::before {
+.dental-treatment-content h3::before {
   content: "";
   position: absolute;
   width: 8px;
@@ -465,7 +477,7 @@
   top: -8px;
 }
 
-#our-practice-page .dental-treatment-content .dental-treatment-sections {
+.dental-treatment-content .dental-treatment-sections {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -480,7 +492,7 @@
   margin-bottom: 2em;
 }
 
-#our-practice-page .dental-treatment-content .dental-treatment-sections .dt-diagnosis {
+.dental-treatment-content .dental-treatment-sections .dt-diagnosis {
   width: 100%;
   height: 100%;
   margin: auto;
@@ -488,28 +500,30 @@
   font-size: 20px;
 }
 
-#our-practice-page .dental-treatment-content .dental-treatment-sections .dt-diagnosis .dt-diagnosis-img {
-  background: url("../images/Diagnosis-Tooth-Image.png");
-  width: 200px;
-  height: 200px;
+.dental-treatment-content .dental-treatment-sections .dt-diagnosis .dt-diagnosis-img {
+  background: url("../images/diagnosis-tooth.svg");
+  width: 175px;
+  height: 175px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 1em auto;
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
 }
 
-#our-practice-page .dental-treatment-content .dental-treatment-sections .dt-diagnosis h4 {
+.dental-treatment-content .dental-treatment-sections .dt-diagnosis h4 {
   font-weight: 700px;
   margin-bottom: 1em;
 }
 
-#our-practice-page .dental-treatment-content .dental-treatment-sections .dt-diagnosis p {
+.dental-treatment-content .dental-treatment-sections .dt-diagnosis p {
   width: 80%;
   line-height: 26px;
   margin: auto;
 }
 
-#our-practice-page .dental-treatment-content .dental-treatment-sections .dt-restorative-procedures {
+.dental-treatment-content .dental-treatment-sections .dt-restorative-procedures {
   width: 100%;
   height: 100%;
   margin: auto;
@@ -517,28 +531,28 @@
   font-size: 20px;
 }
 
-#our-practice-page .dental-treatment-content .dental-treatment-sections .dt-restorative-procedures .dt-restorative-procedures-img {
-  background: url("../images/Restorative-Procedures-Tooth-Image.png");
-  width: 200px;
-  height: 200px;
+.dental-treatment-content .dental-treatment-sections .dt-restorative-procedures .dt-restorative-procedures-img {
+  background: url("../images/restorative-tooth-image.svg");
+  width: 175px;
+  height: 175px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 1em auto;
 }
 
-#our-practice-page .dental-treatment-content .dental-treatment-sections .dt-restorative-procedures h4 {
+.dental-treatment-content .dental-treatment-sections .dt-restorative-procedures h4 {
   font-weight: 700px;
   margin-bottom: 1em;
 }
 
-#our-practice-page .dental-treatment-content .dental-treatment-sections .dt-restorative-procedures p {
+.dental-treatment-content .dental-treatment-sections .dt-restorative-procedures p {
   width: 90%;
   line-height: 26px;
   margin: auto;
 }
 
-#our-practice-page .dental-treatment-content .dental-treatment-sections .dt-hygiene {
+.dental-treatment-content .dental-treatment-sections .dt-hygiene {
   width: 100%;
   height: 100%;
   margin: auto;
@@ -546,28 +560,30 @@
   font-size: 20px;
 }
 
-#our-practice-page .dental-treatment-content .dental-treatment-sections .dt-hygiene .dt-hygiene-img {
-  background: url("../images/Hygiene-Teeth-Image.png");
-  width: 200px;
-  height: 200px;
+.dental-treatment-content .dental-treatment-sections .dt-hygiene .dt-hygiene-img {
+  background: url("../images/hygiene-tooth-image.svg");
+  width: 175px;
+  height: 175px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: auto;
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
 }
 
-#our-practice-page .dental-treatment-content .dental-treatment-sections .dt-hygiene h4 {
+.dental-treatment-content .dental-treatment-sections .dt-hygiene h4 {
   font-weight: 700px;
   margin: 1em auto;
 }
 
-#our-practice-page .dental-treatment-content .dental-treatment-sections .dt-hygiene p {
+.dental-treatment-content .dental-treatment-sections .dt-hygiene p {
   width: 90%;
   line-height: 26px;
   margin: auto;
 }
 
-#our-practice-page .dental-treatment-content a {
+.dental-treatment-content a {
   display: block;
   text-decoration: none;
   font-weight: 600;
@@ -583,7 +599,7 @@
 #dental-exams-cleaning #dental-exams-cleaning-content {
   width: 100%;
   height: 100%;
-  padding: 4em;
+  padding: 3em;
 }
 
 #dental-exams-cleaning #dental-exams-cleaning-content h2 {
@@ -642,7 +658,7 @@
 #xray-page #xray-content {
   width: 100%;
   height: 100%;
-  padding: 4em;
+  padding: 3em;
   line-height: 26px;
 }
 
@@ -700,7 +716,7 @@
 #oral-cancer-exam-page #oral-cancer-exam-content {
   width: 100%;
   height: 100%;
-  padding: 4em;
+  padding: 3em;
   line-height: 26px;
 }
 
@@ -752,7 +768,7 @@
 #cleaning-prevention-page #cleaning-prevention-content {
   width: 100%;
   height: 100%;
-  padding: 4em;
+  padding: 3em;
   font-family: "Roboto", sans-serif;
 }
 
@@ -808,7 +824,7 @@
 #home-care-page #home-care-content {
   width: 100%;
   height: 100%;
-  padding: 4em;
+  padding: 3em;
   font-family: "Roboto", sans-serif;
 }
 
@@ -848,6 +864,10 @@
   margin: auto;
 }
 
+.accordion .card:last-child {
+  margin-bottom: 10em;
+}
+
 .accordion .card {
   margin-bottom: 2em;
   border-radius: 0;
@@ -863,15 +883,19 @@
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.accordion .card .card-header::after {
-  content: "\0025BC";
-  /* Unicode character for "plus" sign (+) */
-  font-size: 16px;
-  color: #000;
-  float: right;
-  margin-left: 5px;
+.accordion .card .card-header p {
+  margin: 0;
 }
 
 .accordion .card .card-body {
@@ -882,7 +906,7 @@
 #restorations-content {
   width: 100%;
   height: 100%;
-  padding: 4em;
+  padding: 3em;
 }
 
 #restorations-content h2 {
@@ -926,7 +950,7 @@
 #dental-implants-page #dental-implants-content {
   width: 100%;
   height: 100%;
-  padding: 4em;
+  padding: 3em;
 }
 
 #dental-implants-page #dental-implants-content h2 {
@@ -970,7 +994,7 @@
 #cosmetic-dentistry-page #cosmetic-dentistry-content {
   width: 100%;
   height: 100%;
-  padding: 4em;
+  padding: 3em;
 }
 
 #cosmetic-dentistry-page #cosmetic-dentistry-content h2 {
@@ -1014,7 +1038,7 @@
 #teeth-whitening-page #teeth-whitening-content {
   width: 100%;
   height: 100%;
-  padding: 4em;
+  padding: 3em;
 }
 
 #teeth-whitening-page #teeth-whitening-content h2 {
@@ -1058,7 +1082,7 @@
 #sealants-page #sealants-content {
   width: 100%;
   height: 100%;
-  padding: 4em;
+  padding: 3em;
   line-height: 19px;
 }
 
@@ -1103,7 +1127,7 @@
 #new-patient-page #new-patient-content {
   width: 100%;
   height: 100%;
-  padding: 5em;
+  padding: 3em;
   font-family: "Roboto", sans-serif;
 }
 
@@ -1201,7 +1225,7 @@
           justify-content: center;
 }
 
-#footer h4 {
+#footer .footer-item {
   font-family: "Roboto", sans-serif;
   margin: 0 3em;
   font-size: 1em;
@@ -1210,11 +1234,47 @@
   text-align: center;
 }
 
+#footer a {
+  text-decoration: none;
+  -webkit-transition: 180ms ease-out;
+  transition: 180ms ease-out;
+}
+
+#footer a:hover {
+  color: #65c3a0;
+}
+
+@media screen and (max-width: 400px) {
+  .homepage-image-overlay h1 {
+    font-size: 16px;
+  }
+  .every-other-page-overlay h1 {
+    font-size: 16px;
+  }
+  #our-practice-content h3 {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  #footer .footer-item {
+    font-size: 10px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #our-practice-page #our-practice-content .lauren .lauren-portrait {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
 @media screen and (max-width: 800px) {
   #footer h4 {
     font-size: 0.8em;
   }
-  #footer #footer-item-2 {
+  #footer .footer-item {
+    font-size: 0.8em;
     margin: auto;
   }
   #new-patient-files {
@@ -1231,6 +1291,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  #our-practice-page #our-practice-content {
+    padding: 1em;
   }
   #our-practice-page #our-practice-content .dr-fred {
     -webkit-box-orient: vertical;
@@ -1250,6 +1313,7 @@
   }
   #our-practice-page #our-practice-content .paula .paula-portrait {
     width: 100%;
+    background-position: center top;
   }
   #our-practice-page #our-practice-content .felix {
     -webkit-box-orient: vertical;
@@ -1268,13 +1332,63 @@
   }
   #our-practice-page #our-practice-content .lauren .lauren-portrait {
     width: 100%;
-    background-position: center top;
-    height: 400px;
+    background-position: center;
+    background-size: contain;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .dental-treatment-sections {
+  .navbar #left-side-nav {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  .navbar .btn {
+    width: 100%;
+    text-align: right;
+    -webkit-transition: 580ms ease-out;
+    transition: 580ms ease-out;
+  }
+  .navbar .dropdown-menu {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+    background: transparent;
+  }
+  .navbar .dropdown-menu a {
+    color: #fff;
+  }
+  .navbar .dropdown-menu a:hover {
+    color: #65c3a0;
+  }
+  .navbar .dropdown-item {
+    background: none;
+    color: #fff;
+    text-align: right;
+    -webkit-transform: translateX(-6px);
+            transform: translateX(-6px);
+  }
+  .navbar .dropdown-item:hover {
+    background-color: transparent;
+  }
+  .navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .homepage-image-overlay h1 {
+    font-size: 34px;
+  }
+  .every-other-page-overlay h1 {
+    font-size: 34px;
+  }
+  .dental-treatment-content .dental-treatment-sections {
     width: 100%;
     height: 100%;
     display: -webkit-box;
@@ -1291,8 +1405,14 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .dental-treatment-sections .dt-diagnosis {
-    margin-bottom: 5em;
+  .dental-treatment-content .dental-treatment-sections .dt-diagnosis {
+    margin-bottom: 3em;
+  }
+  .dental-treatment-content .dental-treatment-sections .dt-restorative-procedures {
+    margin-bottom: 3em;
+  }
+  .dental-treatment-content .dental-treatment-sections .dt-hygiene {
+    margin-bottom: 3em;
   }
 }
 /*# sourceMappingURL=App.css.map */
