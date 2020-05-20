@@ -8,11 +8,6 @@ import image4 from "../images/Image-4.jpg";
 import image5 from "../images/Image-5.jpeg";
 import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
 
-import file1 from "../images/Notice-Of-Privacy-Practies.pdf";
-import file2 from "../images/Medical-History-Form.pdf";
-import file3 from "../images/Informed-Consent.pdf";
-import file4 from "../images/HIPPA-signature-pg.pdf";
-
 const key =
   "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4";
 
@@ -77,7 +72,7 @@ export default function NewPatient() {
 
         <p>
           Prior to your first appointment, please download the forms below. Upon
-          completion, please email them to{" "}
+          completion, please email them to
           <a
             href="mailto:info@kastenbaumpros.com"
             target="_blank"
@@ -88,16 +83,32 @@ export default function NewPatient() {
           .
         </p>
         <div id="new-patient-files">
-          <a href={file2} target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://docdro.id/GqrjJep"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Medical History Form
           </a>
-          <a href={file3} target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://docdro.id/QYhAYn1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Informed Consent
           </a>
-          <a href={file1} target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://docdro.id/9SyhiXY"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Notice Of Privacy Practices
           </a>
-          <a href={file4} target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://docdro.id/iGZKf4o"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             HIPPA
           </a>
         </div>
