@@ -72,7 +72,7 @@ export default function NewPatient() {
 
         <p>
           Prior to your first appointment, please download the forms below. Upon
-          completion, please email them to
+          completion, please email them to&nbsp;
           <a
             href="mailto:info@kastenbaumpros.com"
             target="_blank"
@@ -84,28 +84,28 @@ export default function NewPatient() {
         </p>
         <div id="new-patient-files">
           <a
-            href="https://docdro.id/GqrjJep"
+            href="https://docdro.id/LWCL83o"
             target="_blank"
             rel="noopener noreferrer"
           >
             Medical History Form
           </a>
           <a
-            href="https://docdro.id/QYhAYn1"
+            href="https://docdro.id/hPHFca7"
             target="_blank"
             rel="noopener noreferrer"
           >
             Informed Consent
           </a>
           <a
-            href="https://docdro.id/9SyhiXY"
+            href="https://docdro.id/Sii2jkE"
             target="_blank"
             rel="noopener noreferrer"
           >
             Notice Of Privacy Practices
           </a>
           <a
-            href="https://docdro.id/iGZKf4o"
+            href="https://docdro.id/jruO10R"
             target="_blank"
             rel="noopener noreferrer"
           >
