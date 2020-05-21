@@ -3,12 +3,12 @@ import Carousel from "react-bootstrap/Carousel";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 
-import image1 from "../images/Image-1.jpeg";
+import image6 from "../images/Image-1.jpeg";
 import image2 from "../images/Image-2.jpeg";
 import image3 from "../images/Image-3.jpeg";
 import image4 from "../images/Image-4.jpg";
 import image5 from "../images/Image-5.jpeg";
-import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
+import image1 from "../images/Image-6-Homepage-Hero-Image.jpg";
 
 const key =
   "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4";

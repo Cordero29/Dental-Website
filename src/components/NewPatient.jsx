@@ -1,12 +1,17 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 
-import image1 from "../images/Image-1.jpeg";
+import image6 from "../images/Image-1.jpeg";
 import image2 from "../images/Image-2.jpeg";
 import image3 from "../images/Image-3.jpeg";
 import image4 from "../images/Image-4.jpg";
 import image5 from "../images/Image-5.jpeg";
-import image6 from "../images/Image-6-Homepage-Hero-Image.jpg";
+import image1 from "../images/Image-6-Homepage-Hero-Image.jpg";
+
+import pdf1 from "../images/Medical-History-Form.pdf";
+import pdf2 from "../images/Informed-Consent.pdf";
+import pdf3 from "../images/Notice-Of-Privacy-Practices.pdf";
+import pdf4 from "../images/HIPPA.pdf";
 
 const key =
   "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp4O4-e5YwokR8L3wUUm5oBs&key=AIzaSyBEalpz1JulLFte1q1lealTVjbHT3blXO4";
@@ -69,7 +74,6 @@ export default function NewPatient() {
       </Carousel>
       <div id="new-patient-content">
         <h2>New Patient Forms</h2>
-
         <p>
           Prior to your first appointment, please download the forms below. Upon
           completion, please email them to&nbsp;
@@ -83,32 +87,16 @@ export default function NewPatient() {
           .
         </p>
         <div id="new-patient-files">
-          <a
-            href="https://docdro.id/LWCL83o"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={pdf1} download>
             Medical History Form
           </a>
-          <a
-            href="https://docdro.id/hPHFca7"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={pdf2} download>
             Informed Consent
           </a>
-          <a
-            href="https://docdro.id/Sii2jkE"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={pdf3} download>
             Notice Of Privacy Practices
           </a>
-          <a
-            href="https://docdro.id/jruO10R"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={pdf4} download>
             HIPPA
           </a>
         </div>

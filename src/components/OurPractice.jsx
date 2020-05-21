@@ -20,7 +20,7 @@ export default function OurPractice() {
       <Carousel className="carousel" interval="5000"  >
         <Carousel.Item>
           <img
-            src={image1}
+            src={image6}
             width="100%"
             height="550px"
             alt="view of the dental office"
@@ -60,7 +60,7 @@ export default function OurPractice() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            src={image6}
+            src={image1}
             width="100%"
             height="550px"
             alt="view of the dental office"
